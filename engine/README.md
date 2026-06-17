@@ -1,6 +1,7 @@
 # SMILE Engine — Phase 0
 
-The non-visual core of the SMILE session logger. **No UI, no Google access.** It does
+The non-visual core of the session logger. 
+**No UI, no Google access.** It does
 three jobs:
 
 1. **Knows the curriculum** — the full Math (690 booklets) and English (620 booklets)
