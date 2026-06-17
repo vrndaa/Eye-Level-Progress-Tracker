@@ -1,0 +1,13 @@
+# Dependencies — npm can recreate this, so we don't track it
+node_modules/
+
+# Secrets — NEVER commit these (Google credentials come later)
+*.key
+*.pem
+service-account*.json
+*credentials*.json
+.env
+.env.*
+
+# Mac / editor junk
+.DS_Store

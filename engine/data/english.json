@@ -1,0 +1,5601 @@
+{
+ "subject": "english",
+ "levels": [
+  "Pre-A",
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "L5",
+  "L6",
+  "L7",
+  "L8"
+ ],
+ "booklets": [
+  {
+   "level": "Pre-A",
+   "position": 1,
+   "code": "Pre-A-1",
+   "readingTopic": "Colors",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 2,
+   "code": "Pre-A-2",
+   "readingTopic": "Shapes: Circle",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 3,
+   "code": "Pre-A-3",
+   "readingTopic": "Shapes: Triangle",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 4,
+   "code": "Pre-A-4",
+   "readingTopic": "Shapes: Square",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 5,
+   "code": "Pre-A-5",
+   "readingTopic": "Shapes: Rectangle",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 6,
+   "code": "Pre-A-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 7,
+   "code": "Pre-A-7",
+   "readingTopic": "Motor Skills: Slanted and Spiked",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 8,
+   "code": "Pre-A-8",
+   "readingTopic": "Motor Skills: Curvilinear and Rectilinear",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 9,
+   "code": "Pre-A-9",
+   "readingTopic": "All About Me",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 10,
+   "code": "Pre-A-10",
+   "readingTopic": "Feelings",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 11,
+   "code": "Pre-A-11",
+   "readingTopic": "Community Helpers",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 12,
+   "code": "Pre-A-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 13,
+   "code": "Pre-A-13",
+   "readingTopic": "Animals",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 14,
+   "code": "Pre-A-14",
+   "readingTopic": "Weather",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 15,
+   "code": "Pre-A-15",
+   "readingTopic": "Seasons",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 16,
+   "code": "Pre-A-16",
+   "readingTopic": "Things That Go",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 17,
+   "code": "Pre-A-17",
+   "readingTopic": "Alike and Different",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 18,
+   "code": "Pre-A-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 19,
+   "code": "Pre-A-19",
+   "readingTopic": "Opposites",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 20,
+   "code": "Pre-A-20",
+   "readingTopic": "Orientation: Above and Below",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 21,
+   "code": "Pre-A-21",
+   "readingTopic": "Orientation: Behind and In Front Of",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 22,
+   "code": "Pre-A-22",
+   "readingTopic": "Orientation: In and Out",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 23,
+   "code": "Pre-A-23",
+   "readingTopic": "Orientation: Near and Far",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 24,
+   "code": "Pre-A-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 25,
+   "code": "Pre-A-25",
+   "readingTopic": "Book Awareness",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 26,
+   "code": "Pre-A-26",
+   "readingTopic": "Print Concept Awareness",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 27,
+   "code": "Pre-A-27",
+   "readingTopic": "Words on a Page",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 28,
+   "code": "Pre-A-28",
+   "readingTopic": "Rhyming Words",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 29,
+   "code": "Pre-A-29",
+   "readingTopic": "Syllable Counting",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "Pre-A",
+   "position": 30,
+   "code": "Pre-A-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "— (no writing component)",
+   "gradeRange": "Pre-K (3–4 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 1,
+   "code": "A-1",
+   "readingTopic": "Letter Aa",
+   "writingComponent": "Handwriting: A",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 2,
+   "code": "A-2",
+   "readingTopic": "Letter Bb",
+   "writingComponent": "Handwriting: B",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 3,
+   "code": "A-3",
+   "readingTopic": "Letter Cc",
+   "writingComponent": "Handwriting: C",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 4,
+   "code": "A-4",
+   "readingTopic": "Letter Dd",
+   "writingComponent": "Handwriting: T",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 5,
+   "code": "A-5",
+   "readingTopic": "Letter Ee",
+   "writingComponent": "Handwriting: B",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 6,
+   "code": "A-6",
+   "readingTopic": "Letter Ff",
+   "writingComponent": "Handwriting: H",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 7,
+   "code": "A-7",
+   "readingTopic": "Letter Gg",
+   "writingComponent": "Handwriting: F",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 8,
+   "code": "A-8",
+   "readingTopic": "Letter Hh",
+   "writingComponent": "Handwriting: N",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 9,
+   "code": "A-9",
+   "readingTopic": "Letter Ii",
+   "writingComponent": "Handwriting: H",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 10,
+   "code": "A-10",
+   "readingTopic": "Letter Jj",
+   "writingComponent": "Handwriting: I",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 11,
+   "code": "A-11",
+   "readingTopic": "Letter Kk",
+   "writingComponent": "Handwriting: J",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 12,
+   "code": "A-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 13,
+   "code": "A-13",
+   "readingTopic": "Letter Ll",
+   "writingComponent": "Narrative and Informational Text: L",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 14,
+   "code": "A-14",
+   "readingTopic": "Letter Mm",
+   "writingComponent": "Narrative and Informational Text: M",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 15,
+   "code": "A-15",
+   "readingTopic": "Letter Nn",
+   "writingComponent": "Handwriting: N",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 16,
+   "code": "A-16",
+   "readingTopic": "Letter Oo",
+   "writingComponent": "Handwriting: O",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 17,
+   "code": "A-17",
+   "readingTopic": "Letter Pp",
+   "writingComponent": "Handwriting: P",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 18,
+   "code": "A-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 19,
+   "code": "A-19",
+   "readingTopic": "Letter Qq",
+   "writingComponent": "Handwriting: Q",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 20,
+   "code": "A-20",
+   "readingTopic": "Letter Rr",
+   "writingComponent": "Handwriting: R",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 21,
+   "code": "A-21",
+   "readingTopic": "Letter Ss",
+   "writingComponent": "Narrative and Informational Text: S",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 22,
+   "code": "A-22",
+   "readingTopic": "Letter Tt",
+   "writingComponent": "Handwriting: T",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 23,
+   "code": "A-23",
+   "readingTopic": "Letter Uu",
+   "writingComponent": "Handwriting: U",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 24,
+   "code": "A-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 25,
+   "code": "A-25",
+   "readingTopic": "Letter Vv",
+   "writingComponent": "Handwriting: V",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 26,
+   "code": "A-26",
+   "readingTopic": "Letter Ww",
+   "writingComponent": "Handwriting: W",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 27,
+   "code": "A-27",
+   "readingTopic": "Letter Xx",
+   "writingComponent": "Handwriting: X",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 28,
+   "code": "A-28",
+   "readingTopic": "Letter Yy",
+   "writingComponent": "Handwriting: Y",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 29,
+   "code": "A-29",
+   "readingTopic": "Letter Zz",
+   "writingComponent": "Handwriting: Z",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "A",
+   "position": 30,
+   "code": "A-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten (4–5 yrs)",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 1,
+   "code": "B-1",
+   "readingTopic": "Beginning Consonant: M/m/",
+   "writingComponent": "Handwriting: M",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 2,
+   "code": "B-2",
+   "readingTopic": "Beginning Consonant: B/b/",
+   "writingComponent": "Handwriting: S",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 3,
+   "code": "B-3",
+   "readingTopic": "Beginning Consonant: T/t/, D/d/",
+   "writingComponent": "Handwriting: T",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 4,
+   "code": "B-4",
+   "readingTopic": "Beginning Consonant: B/b/",
+   "writingComponent": "Handwriting: B",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 5,
+   "code": "B-5",
+   "readingTopic": "Beginning Consonant: H/h/",
+   "writingComponent": "Handwriting: H",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 6,
+   "code": "B-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 7,
+   "code": "B-7",
+   "readingTopic": "Beginning Consonant: F/f/",
+   "writingComponent": "Handwriting: F",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 8,
+   "code": "B-8",
+   "readingTopic": "Beginning Consonant: N/n/",
+   "writingComponent": "Handwriting: N",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 9,
+   "code": "B-9",
+   "readingTopic": "Beginning Consonant: L/l/, J/j/",
+   "writingComponent": "Handwriting: L",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 10,
+   "code": "B-10",
+   "readingTopic": "Beginning Consonant: R/r/",
+   "writingComponent": "Handwriting: R",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 11,
+   "code": "B-11",
+   "readingTopic": "Beginning Consonant: P/p/",
+   "writingComponent": "Handwriting: P",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 12,
+   "code": "B-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 13,
+   "code": "B-13",
+   "readingTopic": "Beginning Consonant: C/k/",
+   "writingComponent": "Narrative and Informational Text: C",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 14,
+   "code": "B-14",
+   "readingTopic": "Beginning Consonant: G/g/",
+   "writingComponent": "Narrative and Informational Text: G",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 15,
+   "code": "B-15",
+   "readingTopic": "Beginning Consonant: D/d/",
+   "writingComponent": "Narrative and Informational: D",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 16,
+   "code": "B-16",
+   "readingTopic": "Beginning Consonant: K/k/",
+   "writingComponent": "Handwriting: K",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 17,
+   "code": "B-17",
+   "readingTopic": "Beginning Consonant: J/j/",
+   "writingComponent": "Narrative and Informational: J",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 18,
+   "code": "B-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 19,
+   "code": "B-19",
+   "readingTopic": "Beginning Consonant: V/v/",
+   "writingComponent": "Handwriting: V",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 20,
+   "code": "B-20",
+   "readingTopic": "Beginning Consonant: W/w/",
+   "writingComponent": "Narrative and Informational: W",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 21,
+   "code": "B-21",
+   "readingTopic": "Beginning Consonant: Y/y/",
+   "writingComponent": "Handwriting: Y",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 22,
+   "code": "B-22",
+   "readingTopic": "Beginning Consonant: Qu/kw/",
+   "writingComponent": "Handwriting: Qu",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 23,
+   "code": "B-23",
+   "readingTopic": "Beginning Consonant: Z/z/",
+   "writingComponent": "Handwriting: Z",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 24,
+   "code": "B-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 25,
+   "code": "B-25",
+   "readingTopic": "Short Vowel: A/a/",
+   "writingComponent": "Narrative and Informational: A",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 26,
+   "code": "B-26",
+   "readingTopic": "Short Vowel: I/i/",
+   "writingComponent": "Handwriting: I",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 27,
+   "code": "B-27",
+   "readingTopic": "Short Vowel: O/o/",
+   "writingComponent": "Narrative and Informational: O",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 28,
+   "code": "B-28",
+   "readingTopic": "Short Vowel: U/u/",
+   "writingComponent": "Handwriting: U",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 29,
+   "code": "B-29",
+   "readingTopic": "Short Vowel: E/e/",
+   "writingComponent": "Handwriting: E",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "B",
+   "position": 30,
+   "code": "B-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 1,
+   "code": "C-1",
+   "readingTopic": "Ending Consonants: M/m/, B/b/",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 2,
+   "code": "C-2",
+   "readingTopic": "Ending Consonants: T/t/, D/d/",
+   "writingComponent": "Narrative and Informational Text",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 3,
+   "code": "C-3",
+   "readingTopic": "Ending Consonants: N/n/, P/p/",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 4,
+   "code": "C-4",
+   "readingTopic": "Ending Consonants: G/g/, L/l/",
+   "writingComponent": "Narrative and Informational Text",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 5,
+   "code": "C-5",
+   "readingTopic": "Ending Consonant: X/ks/",
+   "writingComponent": "Narrative and Informational Text",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 6,
+   "code": "C-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 7,
+   "code": "C-7",
+   "readingTopic": "Word Family: Short a (-at)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 8,
+   "code": "C-8",
+   "readingTopic": "Word Family: Short a (-ap)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 9,
+   "code": "C-9",
+   "readingTopic": "Word Family: Short a (-an)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 10,
+   "code": "C-10",
+   "readingTopic": "Word Family: Short a (-ad)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 11,
+   "code": "C-11",
+   "readingTopic": "Word Family: Short a (-am, -ab)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 12,
+   "code": "C-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 13,
+   "code": "C-13",
+   "readingTopic": "Word Family: Short i (-ig)",
+   "writingComponent": "3. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 14,
+   "code": "C-14",
+   "readingTopic": "Word Family: Short i (-it)",
+   "writingComponent": "3. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 15,
+   "code": "C-15",
+   "readingTopic": "Word Family: Short i (-in)",
+   "writingComponent": "3. Informational",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 16,
+   "code": "C-16",
+   "readingTopic": "Word Family: Short i (-id)",
+   "writingComponent": "4. Prediction",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 17,
+   "code": "C-17",
+   "readingTopic": "Word Family: Short i (-im, -ip)",
+   "writingComponent": "4. Prediction",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 18,
+   "code": "C-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 19,
+   "code": "C-19",
+   "readingTopic": "Word Families: Short u (-ug, -up)",
+   "writingComponent": "5. Story Elements (Character and Setting)",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 20,
+   "code": "C-20",
+   "readingTopic": "Word Families: Short u (-un, -ub)",
+   "writingComponent": "5. Story Elements",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 21,
+   "code": "C-21",
+   "readingTopic": "Word Family: Short e (-et)",
+   "writingComponent": "5. Story Elements",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 22,
+   "code": "C-22",
+   "readingTopic": "Word Family: Short e (-en)",
+   "writingComponent": "5. Story Elements",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 23,
+   "code": "C-23",
+   "readingTopic": "Word Family: Short a (-ed)",
+   "writingComponent": "5. Story Elements",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 24,
+   "code": "C-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 25,
+   "code": "C-25",
+   "readingTopic": "Double Consonants (-ff, -ss, -zz)",
+   "writingComponent": "6. Narrative / Compare and Contrast",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 26,
+   "code": "C-26",
+   "readingTopic": "Double Consonants (-ll)",
+   "writingComponent": "6. Narrative / Compare and Contrast",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 27,
+   "code": "C-27",
+   "readingTopic": "Nouns: Singular/Plural",
+   "writingComponent": "6. Compare and Contrast",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 28,
+   "code": "C-28",
+   "readingTopic": "Verbs: Present Tense",
+   "writingComponent": "6. Compare and Contrast",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 29,
+   "code": "C-29",
+   "readingTopic": "Sentences: Capitalization and Punctuation",
+   "writingComponent": "6. Compare and Contrast",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "C",
+   "position": 30,
+   "code": "C-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Kindergarten / Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 1,
+   "code": "D-1",
+   "readingTopic": "Beginning Consonant Digraph (sh-)",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 2,
+   "code": "D-2",
+   "readingTopic": "Beginning Consonant Digraph (ch-)",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 3,
+   "code": "D-3",
+   "readingTopic": "Beginning Consonant Digraph (th-)",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 4,
+   "code": "D-4",
+   "readingTopic": "Beginning Consonant Digraph (wh-)",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 5,
+   "code": "D-5",
+   "readingTopic": "Ending Consonant Digraphs (sh, ch, th, ck)",
+   "writingComponent": "1. Informational",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 6,
+   "code": "D-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 7,
+   "code": "D-7",
+   "readingTopic": "Beginning Consonant Blends (sh-, sp-)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 8,
+   "code": "D-8",
+   "readingTopic": "Beginning Consonant Blends (sh-, sn-, sm-)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 9,
+   "code": "D-9",
+   "readingTopic": "Beginning Consonant Blends (cl-, pl-)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 10,
+   "code": "D-10",
+   "readingTopic": "Beginning Consonant Blends (spl-, fl-)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 11,
+   "code": "D-11",
+   "readingTopic": "Beginning Consonant Blends (cr-, fr-, tr-)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 12,
+   "code": "D-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 13,
+   "code": "D-13",
+   "readingTopic": "Ending Blend (-st)",
+   "writingComponent": "3. Story Elements / Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 14,
+   "code": "D-14",
+   "readingTopic": "Ending Blend (-mp)",
+   "writingComponent": "3. Story Elements / Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 15,
+   "code": "D-15",
+   "readingTopic": "Ending Consonant Blends (-lt, -ld, -sk)",
+   "writingComponent": "3. Story Elements / Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 16,
+   "code": "D-16",
+   "readingTopic": "Ending Consonant Blends (-lt, -nt, -nk)",
+   "writingComponent": "3. Story Elements / Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 17,
+   "code": "D-17",
+   "readingTopic": "Ending Consonant Blends (-ng, -nk)",
+   "writingComponent": "3. Story Elements / Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 18,
+   "code": "D-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 19,
+   "code": "D-19",
+   "readingTopic": "Silent e: Long a",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 20,
+   "code": "D-20",
+   "readingTopic": "Silent e: Long i",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 21,
+   "code": "D-21",
+   "readingTopic": "Silent e: Long o",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 22,
+   "code": "D-22",
+   "readingTopic": "Silent e: Long u",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 23,
+   "code": "D-23",
+   "readingTopic": "Y as Vowel: Long i",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 24,
+   "code": "D-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 25,
+   "code": "D-25",
+   "readingTopic": "Adjectives: Common",
+   "writingComponent": "5. Compare and Contrast / Main Idea and Details",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 26,
+   "code": "D-26",
+   "readingTopic": "Nouns: Irregular Plural",
+   "writingComponent": "5. Compare and Contrast / Main Idea and Details",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 27,
+   "code": "D-27",
+   "readingTopic": "Verbs: Irregular Present Tense",
+   "writingComponent": "5. Compare and Contrast / Main Idea and Details",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 28,
+   "code": "D-28",
+   "readingTopic": "Subject-Verb Agreement",
+   "writingComponent": "5. Compare and Contrast / Main Idea and Details",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 29,
+   "code": "D-29",
+   "readingTopic": "Verbs: Past Tense",
+   "writingComponent": "5. Compare and Contrast / Main Idea and Details",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "D",
+   "position": 30,
+   "code": "D-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 1,
+   "code": "E-1",
+   "readingTopic": "R-Controlled Vowels (ar)",
+   "writingComponent": "1. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 2,
+   "code": "E-2",
+   "readingTopic": "R-Controlled Vowels (or)",
+   "writingComponent": "1. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 3,
+   "code": "E-3",
+   "readingTopic": "R-Controlled Vowels (er, ir, ur)",
+   "writingComponent": "1. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 4,
+   "code": "E-4",
+   "readingTopic": "Vowel Teams: Long a (ai, ay)",
+   "writingComponent": "1. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 5,
+   "code": "E-5",
+   "readingTopic": "Vowel Teams: Long a (eigh, ei, ey)",
+   "writingComponent": "1. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 6,
+   "code": "E-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 7,
+   "code": "E-7",
+   "readingTopic": "Vowel Teams: Long e (ee, ea)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 8,
+   "code": "E-8",
+   "readingTopic": "Vowel Teams: Long e (ie, ei, ey)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 9,
+   "code": "E-9",
+   "readingTopic": "Vowel Teams: Long i (ie, igh)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 10,
+   "code": "E-10",
+   "readingTopic": "Vowel Teams: Long o (oe, ow, oa, old)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 11,
+   "code": "E-11",
+   "readingTopic": "Vowel Teams: Short e (ea)",
+   "writingComponent": "Text Features",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 12,
+   "code": "E-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 13,
+   "code": "E-13",
+   "readingTopic": "Vowel Teams (oo)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 14,
+   "code": "E-14",
+   "readingTopic": "Vowel Teams (ue, ew, ui)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 15,
+   "code": "E-15",
+   "readingTopic": "Vowel Diphthongs (oi, oy)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 16,
+   "code": "E-16",
+   "readingTopic": "Vowel Diphthongs (ou, ow)",
+   "writingComponent": "2. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 17,
+   "code": "E-17",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 18,
+   "code": "E-18",
+   "readingTopic": "Inflectional Endings (-ed)",
+   "writingComponent": "Before, During, After Strategy",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 19,
+   "code": "E-19",
+   "readingTopic": "Y as a Vowel (Long e)",
+   "writingComponent": "Before, During, After Strategy",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 20,
+   "code": "E-20",
+   "readingTopic": "Multisyllabic Words",
+   "writingComponent": "3. Informational / Asking and Answering Questions",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 21,
+   "code": "E-21",
+   "readingTopic": "Syllable Rules: Open",
+   "writingComponent": "3. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 22,
+   "code": "E-22",
+   "readingTopic": "Syllable Rules: Closed",
+   "writingComponent": "3. Informational",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 23,
+   "code": "E-23",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 24,
+   "code": "E-24",
+   "readingTopic": "Question Words",
+   "writingComponent": "Fiction or Nonfiction",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 25,
+   "code": "E-25",
+   "readingTopic": "Verbs: Irregular Past Tense",
+   "writingComponent": "Fiction or Nonfiction",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 26,
+   "code": "E-26",
+   "readingTopic": "Verbs: Future Tense",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 27,
+   "code": "E-27",
+   "readingTopic": "Capitalization: Proper Nouns",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 28,
+   "code": "E-28",
+   "readingTopic": "Writing Questions: Present and Past Tense",
+   "writingComponent": "4. Narrative",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 29,
+   "code": "E-29",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "E",
+   "position": 30,
+   "code": "E-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 1 / 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 1,
+   "code": "F-1",
+   "readingTopic": "3-Letter Blends (spl, spr, str, thr)",
+   "writingComponent": "1. Main Idea and Details",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 2,
+   "code": "F-2",
+   "readingTopic": "Consonant Clusters (-tch, -dge)",
+   "writingComponent": "1. Main Idea and Details",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 3,
+   "code": "F-3",
+   "readingTopic": "Silent Letters (kn-, wr-, mb)",
+   "writingComponent": "1. Main Idea and Details",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 4,
+   "code": "F-4",
+   "readingTopic": "Long Vowel Spellings (-ing, -old, -ild)",
+   "writingComponent": "1. Main Idea and Details",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 5,
+   "code": "F-5",
+   "readingTopic": "Consonant Digraphs (ph, gh)",
+   "writingComponent": "1. Main Idea and Details",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 6,
+   "code": "F-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 7,
+   "code": "F-7",
+   "readingTopic": "Soft c Sound",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 8,
+   "code": "F-8",
+   "readingTopic": "Soft g Sound",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 9,
+   "code": "F-9",
+   "readingTopic": "Spelling (-ed, -ing)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 10,
+   "code": "F-10",
+   "readingTopic": "Spelling (-s, -es, -ies)",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 11,
+   "code": "F-11",
+   "readingTopic": "Spelling: Vowel Combination REVIEW",
+   "writingComponent": "2. Sequence of Events",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 12,
+   "code": "F-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 13,
+   "code": "F-13",
+   "readingTopic": "Prefixes (pre-, re-, un-)",
+   "writingComponent": "3. Narrative",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 14,
+   "code": "F-14",
+   "readingTopic": "Suffixes (-ful, -less, -ness, -er, -ion, -tion)",
+   "writingComponent": "3. Narrative",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 15,
+   "code": "F-15",
+   "readingTopic": "Nouns, Verbs, and Adjectives",
+   "writingComponent": "3. Narrative",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 16,
+   "code": "F-16",
+   "readingTopic": "Nouns: Irregular Plural",
+   "writingComponent": "3. Narrative",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 17,
+   "code": "F-17",
+   "readingTopic": "Verbs: Irregular Past Tense",
+   "writingComponent": "3. Narrative",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 18,
+   "code": "F-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 19,
+   "code": "F-19",
+   "readingTopic": "Adverbs",
+   "writingComponent": "4. Opinion / Cause and Effect",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 20,
+   "code": "F-20",
+   "readingTopic": "Subject and Predicate",
+   "writingComponent": "4. Opinion / Cause and Effect",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 21,
+   "code": "F-21",
+   "readingTopic": "Object",
+   "writingComponent": "4. Opinion / Cause and Effect",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 22,
+   "code": "F-22",
+   "readingTopic": "Subject Pronouns",
+   "writingComponent": "4. Opinion / Cause and Effect",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 23,
+   "code": "F-23",
+   "readingTopic": "Object Pronouns",
+   "writingComponent": "4. Opinion / Cause and Effect",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 24,
+   "code": "F-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 25,
+   "code": "F-25",
+   "readingTopic": "Subject and Object Pronouns",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 26,
+   "code": "F-26",
+   "readingTopic": "Reflexive Pronouns",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 27,
+   "code": "F-27",
+   "readingTopic": "Contractions",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 28,
+   "code": "F-28",
+   "readingTopic": "Possessives",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 29,
+   "code": "F-29",
+   "readingTopic": "Commas",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "F",
+   "position": 30,
+   "code": "F-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 2",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 1,
+   "code": "G-1",
+   "readingTopic": "Adjectives and Adverbs",
+   "writingComponent": "1. Informational Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 2,
+   "code": "G-2",
+   "readingTopic": "Adjectives: Comparative and Superlative",
+   "writingComponent": "1. Informational Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 3,
+   "code": "G-3",
+   "readingTopic": "Adverbs: Time, Place, How",
+   "writingComponent": "1. Informational Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 4,
+   "code": "G-4",
+   "readingTopic": "Abbreviations",
+   "writingComponent": "1. Informational Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 5,
+   "code": "G-5",
+   "readingTopic": "Fact and Opinion",
+   "writingComponent": "1. Informational Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 6,
+   "code": "G-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 7,
+   "code": "G-7",
+   "readingTopic": "Fiction: Point of View",
+   "writingComponent": "2. Response to Text (Narrative)",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 8,
+   "code": "G-8",
+   "readingTopic": "Fiction: Asking Questions",
+   "writingComponent": "2. Response to Text (Narrative)",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 9,
+   "code": "G-9",
+   "readingTopic": "Fiction: Rhythm and Rhyme",
+   "writingComponent": "2. Response to Text (Narrative)",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 10,
+   "code": "G-10",
+   "readingTopic": "Fiction: Famous Stories",
+   "writingComponent": "2. Response to Text (Narrative)",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 11,
+   "code": "G-11",
+   "readingTopic": "Fiction: Determining Theme",
+   "writingComponent": "2. Response to Text (Narrative)",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 12,
+   "code": "G-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 13,
+   "code": "G-13",
+   "readingTopic": "Informational Text: Asking Questions",
+   "writingComponent": "3. Research Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 14,
+   "code": "G-14",
+   "readingTopic": "Informational Text: Science",
+   "writingComponent": "3. Research Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 15,
+   "code": "G-15",
+   "readingTopic": "Informational Text: Social Studies",
+   "writingComponent": "3. Research Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 16,
+   "code": "G-16",
+   "readingTopic": "Informational Text: Biography",
+   "writingComponent": "3. Research Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 17,
+   "code": "G-17",
+   "readingTopic": "Informational Text: Geography",
+   "writingComponent": "3. Research Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 18,
+   "code": "G-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 19,
+   "code": "G-19",
+   "readingTopic": "Narrative Text: Folklore",
+   "writingComponent": "4. Narrative Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 20,
+   "code": "G-20",
+   "readingTopic": "Narrative Text: Story Structure",
+   "writingComponent": "4. Narrative Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 21,
+   "code": "G-21",
+   "readingTopic": "Narrative Text: Autobiography",
+   "writingComponent": "4. Narrative Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 22,
+   "code": "G-22",
+   "readingTopic": "Narrative Text: Using Illustrations",
+   "writingComponent": "4. Narrative Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 23,
+   "code": "G-23",
+   "readingTopic": "Comparing and Contrasting Texts",
+   "writingComponent": "4. Narrative Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 24,
+   "code": "G-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 25,
+   "code": "G-25",
+   "readingTopic": "Spelling: Root Words",
+   "writingComponent": "5. Opinion Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 26,
+   "code": "G-26",
+   "readingTopic": "Spelling: Prefixes",
+   "writingComponent": "5. Opinion Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 27,
+   "code": "G-27",
+   "readingTopic": "Spelling: Suffixes",
+   "writingComponent": "5. Opinion Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 28,
+   "code": "G-28",
+   "readingTopic": "Spelling: Homophones 1",
+   "writingComponent": "5. Opinion Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 29,
+   "code": "G-29",
+   "readingTopic": "Spelling: Homophones 2",
+   "writingComponent": "5. Opinion Writing",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "G",
+   "position": 30,
+   "code": "G-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 1,
+   "code": "H-1",
+   "readingTopic": "Text Features: Parts of a Book",
+   "writingComponent": "1. Informational / Text Features",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 2,
+   "code": "H-2",
+   "readingTopic": "Interpreting Charts and Graphs",
+   "writingComponent": "1. Informational / Text Features",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 3,
+   "code": "H-3",
+   "readingTopic": "Interpreting Maps",
+   "writingComponent": "1. Informational / Text Features",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 4,
+   "code": "H-4",
+   "readingTopic": "Research: Standard Sources",
+   "writingComponent": "1. Informational / Text Features",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 5,
+   "code": "H-5",
+   "readingTopic": "Research: Online Sources",
+   "writingComponent": "1. Informational / Text Features",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 6,
+   "code": "H-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 7,
+   "code": "H-7",
+   "readingTopic": "Word Work: Multiple Meanings",
+   "writingComponent": "2. Context Clues / Sequence of Events",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 8,
+   "code": "H-8",
+   "readingTopic": "Word Work: Greek and Latin Roots",
+   "writingComponent": "2. Context Clues / Sequence of Events",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 9,
+   "code": "H-9",
+   "readingTopic": "Word Work: Suffixes",
+   "writingComponent": "2. Context Clues / Sequence of Events",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 10,
+   "code": "H-10",
+   "readingTopic": "Word Work: Shades of Meaning",
+   "writingComponent": "2. Context Clues / Sequence of Events",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 11,
+   "code": "H-11",
+   "readingTopic": "Word Work: Clarifying Meaning",
+   "writingComponent": "2. Context Clues / Sequence of Events",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 12,
+   "code": "H-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 13,
+   "code": "H-13",
+   "readingTopic": "Synonyms and Antonyms",
+   "writingComponent": "3. Summarizing Fiction and Nonfiction",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 14,
+   "code": "H-14",
+   "readingTopic": "Sentences: Pronoun-Antecedent Agreement",
+   "writingComponent": "3. Summarizing Fiction and Nonfiction",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 15,
+   "code": "H-15",
+   "readingTopic": "Coordinating Conjunctions / Compound Sentences",
+   "writingComponent": "3. Summarizing Fiction and Nonfiction",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 16,
+   "code": "H-16",
+   "readingTopic": "Subordinating Conjunctions / Complex Sentences",
+   "writingComponent": "3. Summarizing Fiction and Nonfiction",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 17,
+   "code": "H-17",
+   "readingTopic": "Simple, Compound, and Complex Sentences",
+   "writingComponent": "3. Summarizing Fiction and Nonfiction",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 18,
+   "code": "H-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 19,
+   "code": "H-19",
+   "readingTopic": "Conventions: Commas",
+   "writingComponent": "4. Opinion Writing",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 20,
+   "code": "H-20",
+   "readingTopic": "Conventions: Capitalization",
+   "writingComponent": "4. Opinion Writing",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 21,
+   "code": "H-21",
+   "readingTopic": "Conventions: Point of View / Story Elements",
+   "writingComponent": "4. Opinion Writing",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 22,
+   "code": "H-22",
+   "readingTopic": "Conventions: Possessive Adjectives and Pronouns",
+   "writingComponent": "4. Opinion Writing",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 23,
+   "code": "H-23",
+   "readingTopic": "Conventions: Articles",
+   "writingComponent": "4. Opinion Writing",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 24,
+   "code": "H-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 25,
+   "code": "H-25",
+   "readingTopic": "Main Idea and Details",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 26,
+   "code": "H-26",
+   "readingTopic": "Theme",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 27,
+   "code": "H-27",
+   "readingTopic": "Compare and Contrast",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 28,
+   "code": "H-28",
+   "readingTopic": "Inferences",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 29,
+   "code": "H-29",
+   "readingTopic": "Cause and Effect",
+   "writingComponent": "5. Response to Text / Research",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "H",
+   "position": 30,
+   "code": "H-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 3 / 4",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 1,
+   "code": "I-1",
+   "readingTopic": "Verb Tenses: Past, Present, and Future",
+   "writingComponent": "1. Compare and Contrast",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 2,
+   "code": "I-2",
+   "readingTopic": "Verb Tenses: Irregular Past and Present",
+   "writingComponent": "1. Compare and Contrast",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 3,
+   "code": "I-3",
+   "readingTopic": "Verb Tense: Progressive Verbs",
+   "writingComponent": "1. Compare and Contrast",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 4,
+   "code": "I-4",
+   "readingTopic": "Nouns: Irregular Plural Nouns",
+   "writingComponent": "1. Compare and Contrast",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 5,
+   "code": "I-5",
+   "readingTopic": "Nouns: Abstract Nouns",
+   "writingComponent": "1. Compare and Contrast",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 6,
+   "code": "I-6",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 7,
+   "code": "I-7",
+   "readingTopic": "Spelling: Roots and Affixes",
+   "writingComponent": "2. Narrative Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 8,
+   "code": "I-8",
+   "readingTopic": "Spelling: Commonly Misspelled Words",
+   "writingComponent": "2. Narrative Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 9,
+   "code": "I-9",
+   "readingTopic": "Spelling: Multisyllabic Words",
+   "writingComponent": "2. Narrative Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 10,
+   "code": "I-10",
+   "readingTopic": "Spelling: Spoken and Formal English",
+   "writingComponent": "2. Narrative Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 11,
+   "code": "I-11",
+   "readingTopic": "Spelling: Easily Confused Words",
+   "writingComponent": "2. Narrative Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 12,
+   "code": "I-12",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 13,
+   "code": "I-13",
+   "readingTopic": "Identifying Text Structure",
+   "writingComponent": "3. Opinion Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 14,
+   "code": "I-14",
+   "readingTopic": "Text Structure: Narrative Texts",
+   "writingComponent": "3. Opinion Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 15,
+   "code": "I-15",
+   "readingTopic": "Text Structure: Informational Texts",
+   "writingComponent": "3. Opinion Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 16,
+   "code": "I-16",
+   "readingTopic": "Text Structure: Explanatory Texts",
+   "writingComponent": "3. Opinion Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 17,
+   "code": "I-17",
+   "readingTopic": "Text Structure: Opinion Texts",
+   "writingComponent": "3. Opinion Writing",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 18,
+   "code": "I-18",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 19,
+   "code": "I-19",
+   "readingTopic": "Story Structure: Plot",
+   "writingComponent": "4. Response to Text (Opinion)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 20,
+   "code": "I-20",
+   "readingTopic": "Story Structure: Problem and Characters",
+   "writingComponent": "4. Response to Text (Opinion)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 21,
+   "code": "I-21",
+   "readingTopic": "Story Structure: Reader's View",
+   "writingComponent": "4. Response to Text (Opinion)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 22,
+   "code": "I-22",
+   "readingTopic": "Story Structure: Conflict",
+   "writingComponent": "4. Response to Text (Opinion)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 23,
+   "code": "I-23",
+   "readingTopic": "Story Structure: Resolution",
+   "writingComponent": "4. Response to Text (Opinion)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 24,
+   "code": "I-24",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 25,
+   "code": "I-25",
+   "readingTopic": "Literary Devices: Simile",
+   "writingComponent": "5. Narrative Writing (Poems)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 26,
+   "code": "I-26",
+   "readingTopic": "Literary Devices: Metaphor",
+   "writingComponent": "5. Narrative Writing (Poems)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 27,
+   "code": "I-27",
+   "readingTopic": "Literary Devices: Alliteration",
+   "writingComponent": "5. Narrative Writing (Poems)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 28,
+   "code": "I-28",
+   "readingTopic": "Literary Devices: Onomatopoeia",
+   "writingComponent": "5. Narrative Writing (Poems)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 29,
+   "code": "I-29",
+   "readingTopic": "Literary Devices: Identifying Devices",
+   "writingComponent": "5. Narrative Writing (Poems)",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "I",
+   "position": 30,
+   "code": "I-30",
+   "readingTopic": "REVIEW",
+   "writingComponent": "—",
+   "gradeRange": "Grade 4 / 5",
+   "verify": false
+  },
+  {
+   "level": "L5",
+   "position": 1,
+   "code": "L5-1",
+   "readingTopic": "[Verify L5-1]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 2,
+   "code": "L5-2",
+   "readingTopic": "Capitalization",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 3,
+   "code": "L5-3",
+   "readingTopic": "[Verify L5-3]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 4,
+   "code": "L5-4",
+   "readingTopic": "Period",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 5,
+   "code": "L5-5",
+   "readingTopic": "Sentence Fragments",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 6,
+   "code": "L5-6",
+   "readingTopic": "[Verify L5-6]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 7,
+   "code": "L5-7",
+   "readingTopic": "Exclamatory Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 8,
+   "code": "L5-8",
+   "readingTopic": "Sentences: Questions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 9,
+   "code": "L5-9",
+   "readingTopic": "Sentences: Commas",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 10,
+   "code": "L5-10",
+   "readingTopic": "Sentences: Commas (2)",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 11,
+   "code": "L5-11",
+   "readingTopic": "[Verify L5-11]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 12,
+   "code": "L5-12",
+   "readingTopic": "Sentences: Quotation Marks",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 13,
+   "code": "L5-13",
+   "readingTopic": "Apostrophes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 14,
+   "code": "L5-14",
+   "readingTopic": "Contractions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 15,
+   "code": "L5-15",
+   "readingTopic": "[Verify L5-15]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 16,
+   "code": "L5-16",
+   "readingTopic": "Nouns: Common and Proper",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 17,
+   "code": "L5-17",
+   "readingTopic": "Pronouns",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 18,
+   "code": "L5-18",
+   "readingTopic": "Verbs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 19,
+   "code": "L5-19",
+   "readingTopic": "[Verify L5-19]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 20,
+   "code": "L5-20",
+   "readingTopic": "Helping Verbs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 21,
+   "code": "L5-21",
+   "readingTopic": "Verbs: Tense",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 22,
+   "code": "L5-22",
+   "readingTopic": "[Verify L5-22 Alphabetizing]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 23,
+   "code": "L5-23",
+   "readingTopic": "Subject",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 24,
+   "code": "L5-24",
+   "readingTopic": "Predicate",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 25,
+   "code": "L5-25",
+   "readingTopic": "S-V Agreement",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 26,
+   "code": "L5-26",
+   "readingTopic": "Adverbs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 27,
+   "code": "L5-27",
+   "readingTopic": "Spelling: Prefixes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 28,
+   "code": "L5-28",
+   "readingTopic": "Spelling: Suffixes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 29,
+   "code": "L5-29",
+   "readingTopic": "[Verify L5-29]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 30,
+   "code": "L5-30",
+   "readingTopic": "[Verify L5-30]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 31,
+   "code": "L5-31",
+   "readingTopic": "Blends and Digraphs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 32,
+   "code": "L5-32",
+   "readingTopic": "[Verify L5-32]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 33,
+   "code": "L5-33",
+   "readingTopic": "Homophones",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 34,
+   "code": "L5-34",
+   "readingTopic": "[Verify L5-34]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 35,
+   "code": "L5-35",
+   "readingTopic": "Building Creative Syllable",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 36,
+   "code": "L5-36",
+   "readingTopic": "[Verify L5-36]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 37,
+   "code": "L5-37",
+   "readingTopic": "Main Idea",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 38,
+   "code": "L5-38",
+   "readingTopic": "[Verify L5-38]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 39,
+   "code": "L5-39",
+   "readingTopic": "Recall",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 40,
+   "code": "L5-40",
+   "readingTopic": "[Verify L5-40]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 41,
+   "code": "L5-41",
+   "readingTopic": "Sequence",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 42,
+   "code": "L5-42",
+   "readingTopic": "[Verify L5-42]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 43,
+   "code": "L5-43",
+   "readingTopic": "[Verify L5-43]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 44,
+   "code": "L5-44",
+   "readingTopic": "Inferences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 45,
+   "code": "L5-45",
+   "readingTopic": "Prediction",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 46,
+   "code": "L5-46",
+   "readingTopic": "[Verify L5-46]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 47,
+   "code": "L5-47",
+   "readingTopic": "[Verify L5-47]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 48,
+   "code": "L5-48",
+   "readingTopic": "[Verify L5-48]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 49,
+   "code": "L5-49",
+   "readingTopic": "[Verify L5-49]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 50,
+   "code": "L5-50",
+   "readingTopic": "Setting",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 51,
+   "code": "L5-51",
+   "readingTopic": "[Verify L5-51]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 52,
+   "code": "L5-52",
+   "readingTopic": "[Verify L5-52]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 53,
+   "code": "L5-53",
+   "readingTopic": "[Verify L5-53 — Fables?]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 54,
+   "code": "L5-54",
+   "readingTopic": "[Verify L5-54]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 55,
+   "code": "L5-55",
+   "readingTopic": "[Verify L5-55]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 56,
+   "code": "L5-56",
+   "readingTopic": "[Verify L5-56]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 57,
+   "code": "L5-57",
+   "readingTopic": "[Verify L5-57]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 58,
+   "code": "L5-58",
+   "readingTopic": "Character",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 59,
+   "code": "L5-59",
+   "readingTopic": "[Verify L5-59]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 60,
+   "code": "L5-60",
+   "readingTopic": "Problem / Conflict / Resolution",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 61,
+   "code": "L5-61",
+   "readingTopic": "[Verify L5-61]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 62,
+   "code": "L5-62",
+   "readingTopic": "Alphabetizing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 63,
+   "code": "L5-63",
+   "readingTopic": "Dictionary",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 64,
+   "code": "L5-64",
+   "readingTopic": "Thesaurus",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 65,
+   "code": "L5-65",
+   "readingTopic": "[Verify L5-65]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 66,
+   "code": "L5-66",
+   "readingTopic": "Parts of a Book",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 67,
+   "code": "L5-67",
+   "readingTopic": "[Verify L5-67]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 68,
+   "code": "L5-68",
+   "readingTopic": "Descriptive Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 69,
+   "code": "L5-69",
+   "readingTopic": "[Verify L5-69]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 70,
+   "code": "L5-70",
+   "readingTopic": "Informative Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 71,
+   "code": "L5-71",
+   "readingTopic": "[Verify L5-71]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 72,
+   "code": "L5-72",
+   "readingTopic": "Letters",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 73,
+   "code": "L5-73",
+   "readingTopic": "Writing: Revision",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 74,
+   "code": "L5-74",
+   "readingTopic": "[Verify L5-74]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 75,
+   "code": "L5-75",
+   "readingTopic": "Building Creative Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 76,
+   "code": "L5-76",
+   "readingTopic": "Acrostic Poems",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 77,
+   "code": "L5-77",
+   "readingTopic": "Simile",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 78,
+   "code": "L5-78",
+   "readingTopic": "Metaphor",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 79,
+   "code": "L5-79",
+   "readingTopic": "Alliteration",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L5",
+   "position": 80,
+   "code": "L5-80",
+   "readingTopic": "Onomatopoeia",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 5",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 1,
+   "code": "L6-1",
+   "readingTopic": "REVIEW",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 2,
+   "code": "L6-2",
+   "readingTopic": "Present Tense",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 3,
+   "code": "L6-3",
+   "readingTopic": "[Verify L6-3]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 4,
+   "code": "L6-4",
+   "readingTopic": "Past Tenses",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 5,
+   "code": "L6-5",
+   "readingTopic": "Future Tenses",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 6,
+   "code": "L6-6",
+   "readingTopic": "Regular Verbs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 7,
+   "code": "L6-7",
+   "readingTopic": "Irregular Verbs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 8,
+   "code": "L6-8",
+   "readingTopic": "Simple Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 9,
+   "code": "L6-9",
+   "readingTopic": "Compound Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 10,
+   "code": "L6-10",
+   "readingTopic": "Adjectives",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 11,
+   "code": "L6-11",
+   "readingTopic": "Adverbs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 12,
+   "code": "L6-12",
+   "readingTopic": "Prepositions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 13,
+   "code": "L6-13",
+   "readingTopic": "Appositives",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 14,
+   "code": "L6-14",
+   "readingTopic": "Apostrophes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 15,
+   "code": "L6-15",
+   "readingTopic": "Quotation Marks and Underlining",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 16,
+   "code": "L6-16",
+   "readingTopic": "Underlining",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 17,
+   "code": "L6-17",
+   "readingTopic": "[Verify L6-17]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 18,
+   "code": "L6-18",
+   "readingTopic": "Root Words",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 19,
+   "code": "L6-19",
+   "readingTopic": "Synonyms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 20,
+   "code": "L6-20",
+   "readingTopic": "Antonyms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 21,
+   "code": "L6-21",
+   "readingTopic": "Homophones",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 22,
+   "code": "L6-22",
+   "readingTopic": "Idioms: Colors",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 23,
+   "code": "L6-23",
+   "readingTopic": "Idioms: Numbers",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 24,
+   "code": "L6-24",
+   "readingTopic": "Idioms: Animals",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 25,
+   "code": "L6-25",
+   "readingTopic": "Idioms: Food",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 26,
+   "code": "L6-26",
+   "readingTopic": "Words with Multiple Meanings",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 27,
+   "code": "L6-27",
+   "readingTopic": "Thesaurus",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 28,
+   "code": "L6-28",
+   "readingTopic": "Main Idea",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 29,
+   "code": "L6-29",
+   "readingTopic": "Recall",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 30,
+   "code": "L6-30",
+   "readingTopic": "Summarization",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 31,
+   "code": "L6-31",
+   "readingTopic": "Compare and Contrast",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 32,
+   "code": "L6-32",
+   "readingTopic": "[Verify L6-32]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 33,
+   "code": "L6-33",
+   "readingTopic": "[Verify L6-33]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 34,
+   "code": "L6-34",
+   "readingTopic": "[Verify L6-34]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 35,
+   "code": "L6-35",
+   "readingTopic": "[Verify L6-35]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 36,
+   "code": "L6-36",
+   "readingTopic": "[Verify L6-36]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 37,
+   "code": "L6-37",
+   "readingTopic": "[Verify L6-37]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 38,
+   "code": "L6-38",
+   "readingTopic": "[Verify L6-38]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 39,
+   "code": "L6-39",
+   "readingTopic": "[Verify L6-39]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 40,
+   "code": "L6-40",
+   "readingTopic": "[Verify L6-40]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 41,
+   "code": "L6-41",
+   "readingTopic": "REVIEW",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 42,
+   "code": "L6-42",
+   "readingTopic": "[Verify L6-42]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 43,
+   "code": "L6-43",
+   "readingTopic": "[Verify L6-43]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 44,
+   "code": "L6-44",
+   "readingTopic": "Inferences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 45,
+   "code": "L6-45",
+   "readingTopic": "Prediction",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 46,
+   "code": "L6-46",
+   "readingTopic": "[Verify L6-46]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 47,
+   "code": "L6-47",
+   "readingTopic": "[Verify L6-47]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 48,
+   "code": "L6-48",
+   "readingTopic": "[Verify L6-48]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 49,
+   "code": "L6-49",
+   "readingTopic": "Setting",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 50,
+   "code": "L6-50",
+   "readingTopic": "Characters",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 51,
+   "code": "L6-51",
+   "readingTopic": "Plot",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 52,
+   "code": "L6-52",
+   "readingTopic": "Motivation",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 53,
+   "code": "L6-53",
+   "readingTopic": "Fables",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 54,
+   "code": "L6-54",
+   "readingTopic": "Myths and Legends",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 55,
+   "code": "L6-55",
+   "readingTopic": "Fairy Tales",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 56,
+   "code": "L6-56",
+   "readingTopic": "Cross Cultural Stories",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 57,
+   "code": "L6-57",
+   "readingTopic": "Simile",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 58,
+   "code": "L6-58",
+   "readingTopic": "Metaphor",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 59,
+   "code": "L6-59",
+   "readingTopic": "Hyperbole",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 60,
+   "code": "L6-60",
+   "readingTopic": "Point of View",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 61,
+   "code": "L6-61",
+   "readingTopic": "Topic Sentence / Paragraph Structure",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 62,
+   "code": "L6-62",
+   "readingTopic": "Conclusion",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 63,
+   "code": "L6-63",
+   "readingTopic": "[Verify L6-63]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 64,
+   "code": "L6-64",
+   "readingTopic": "Prewriting",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 65,
+   "code": "L6-65",
+   "readingTopic": "Details",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 66,
+   "code": "L6-66",
+   "readingTopic": "Revision",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 67,
+   "code": "L6-67",
+   "readingTopic": "Research: Encyclopedia / Newspaper / Periodical",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 68,
+   "code": "L6-68",
+   "readingTopic": "Main Idea",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 69,
+   "code": "L6-69",
+   "readingTopic": "Paraphrasing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 70,
+   "code": "L6-70",
+   "readingTopic": "Compare and Contrast",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 71,
+   "code": "L6-71",
+   "readingTopic": "Narrative Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 72,
+   "code": "L6-72",
+   "readingTopic": "[Verify L6-72]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 73,
+   "code": "L6-73",
+   "readingTopic": "Responding to Literature",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 74,
+   "code": "L6-74",
+   "readingTopic": "Cause and Effect",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 75,
+   "code": "L6-75",
+   "readingTopic": "Fact and Opinion",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 76,
+   "code": "L6-76",
+   "readingTopic": "Summarization",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 77,
+   "code": "L6-77",
+   "readingTopic": "Predictions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 78,
+   "code": "L6-78",
+   "readingTopic": "Following Instructions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 79,
+   "code": "L6-79",
+   "readingTopic": "Thank You Letter / Invitation / Instructions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L6",
+   "position": 80,
+   "code": "L6-80",
+   "readingTopic": "Building a Card House",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 6",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 1,
+   "code": "L7-1",
+   "readingTopic": "REVIEW",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 2,
+   "code": "L7-2",
+   "readingTopic": "[Verify L7-2]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 3,
+   "code": "L7-3",
+   "readingTopic": "Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 4,
+   "code": "L7-4",
+   "readingTopic": "Incomplete Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 5,
+   "code": "L7-5",
+   "readingTopic": "Run-on / Choppy Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 6,
+   "code": "L7-6",
+   "readingTopic": "Subject and Predicates",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 7,
+   "code": "L7-7",
+   "readingTopic": "Common and Proper Nouns",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 8,
+   "code": "L7-8",
+   "readingTopic": "Singular and Plural Nouns",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 9,
+   "code": "L7-9",
+   "readingTopic": "[Verify L7-9]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 10,
+   "code": "L7-10",
+   "readingTopic": "[Verify L7-10]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 11,
+   "code": "L7-11",
+   "readingTopic": "Tenses",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 12,
+   "code": "L7-12",
+   "readingTopic": "[Verify L7-12]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 13,
+   "code": "L7-13",
+   "readingTopic": "Adjectives",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 14,
+   "code": "L7-14",
+   "readingTopic": "[Verify L7-14]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 15,
+   "code": "L7-15",
+   "readingTopic": "Synonyms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 16,
+   "code": "L7-16",
+   "readingTopic": "Homonyms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 17,
+   "code": "L7-17",
+   "readingTopic": "[Verify L7-17]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 18,
+   "code": "L7-18",
+   "readingTopic": "Vocabulary",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 19,
+   "code": "L7-19",
+   "readingTopic": "[Verify L7-19]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 20,
+   "code": "L7-20",
+   "readingTopic": "Idioms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 21,
+   "code": "L7-21",
+   "readingTopic": "Words Often Confused",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 22,
+   "code": "L7-22",
+   "readingTopic": "Dialect",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 23,
+   "code": "L7-23",
+   "readingTopic": "Thesaurus",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 24,
+   "code": "L7-24",
+   "readingTopic": "Main Idea",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 25,
+   "code": "L7-25",
+   "readingTopic": "Details",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 26,
+   "code": "L7-26",
+   "readingTopic": "Sequencing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 27,
+   "code": "L7-27",
+   "readingTopic": "Comprehension",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 28,
+   "code": "L7-28",
+   "readingTopic": "Summarizing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 29,
+   "code": "L7-29",
+   "readingTopic": "Recall",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 30,
+   "code": "L7-30",
+   "readingTopic": "Compare and Contrast",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 31,
+   "code": "L7-31",
+   "readingTopic": "[Verify L7-31]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 32,
+   "code": "L7-32",
+   "readingTopic": "[Verify L7-32]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 33,
+   "code": "L7-33",
+   "readingTopic": "[Verify L7-33]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 34,
+   "code": "L7-34",
+   "readingTopic": "Cause and Effect",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 35,
+   "code": "L7-35",
+   "readingTopic": "Fact and Opinion",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 36,
+   "code": "L7-36",
+   "readingTopic": "Information Reports",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 37,
+   "code": "L7-37",
+   "readingTopic": "Predictions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 38,
+   "code": "L7-38",
+   "readingTopic": "Author's Purpose",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 39,
+   "code": "L7-39",
+   "readingTopic": "[Verify L7-39]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 40,
+   "code": "L7-40",
+   "readingTopic": "The Lonely Puppy / Letter",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 41,
+   "code": "L7-41",
+   "readingTopic": "The Dog and the Butterfly",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 42,
+   "code": "L7-42",
+   "readingTopic": "Ireland",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 43,
+   "code": "L7-43",
+   "readingTopic": "Big Birds",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 44,
+   "code": "L7-44",
+   "readingTopic": "Peter Ilyich Tchaikovsky",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 45,
+   "code": "L7-45",
+   "readingTopic": "A Man with Words",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 46,
+   "code": "L7-46",
+   "readingTopic": "Lucy",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 47,
+   "code": "L7-47",
+   "readingTopic": "California",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 48,
+   "code": "L7-48",
+   "readingTopic": "Setting",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 49,
+   "code": "L7-49",
+   "readingTopic": "Characters",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 50,
+   "code": "L7-50",
+   "readingTopic": "Plot",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 51,
+   "code": "L7-51",
+   "readingTopic": "Descriptive Details",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 52,
+   "code": "L7-52",
+   "readingTopic": "Fables",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 53,
+   "code": "L7-53",
+   "readingTopic": "Fairy Tales",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 54,
+   "code": "L7-54",
+   "readingTopic": "Simile",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 55,
+   "code": "L7-55",
+   "readingTopic": "Metaphor",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 56,
+   "code": "L7-56",
+   "readingTopic": "Alliteration / Onomatopoeia",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 57,
+   "code": "L7-57",
+   "readingTopic": "Simile",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 58,
+   "code": "L7-58",
+   "readingTopic": "Metaphor",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 59,
+   "code": "L7-59",
+   "readingTopic": "Point of View",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 60,
+   "code": "L7-60",
+   "readingTopic": "Topic Sentence / Main Idea",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 61,
+   "code": "L7-61",
+   "readingTopic": "Transition Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 62,
+   "code": "L7-62",
+   "readingTopic": "Paragraphs: Introduction",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 63,
+   "code": "L7-63",
+   "readingTopic": "Paragraphs: Body",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 64,
+   "code": "L7-64",
+   "readingTopic": "Paragraphs: Concluding",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 65,
+   "code": "L7-65",
+   "readingTopic": "Paragraph Structure",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 66,
+   "code": "L7-66",
+   "readingTopic": "Revising",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 67,
+   "code": "L7-67",
+   "readingTopic": "Research",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 68,
+   "code": "L7-68",
+   "readingTopic": "Author's Voice",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 69,
+   "code": "L7-69",
+   "readingTopic": "Writing: Descriptive",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 70,
+   "code": "L7-70",
+   "readingTopic": "Writing: Informative / Narrative / Persuasive",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 71,
+   "code": "L7-71",
+   "readingTopic": "[Verify L7-71]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 72,
+   "code": "L7-72",
+   "readingTopic": "Writing: Narrative / Compare / Contrast",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 73,
+   "code": "L7-73",
+   "readingTopic": "Writing: Argumentative",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 74,
+   "code": "L7-74",
+   "readingTopic": "Writing: Expository",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 75,
+   "code": "L7-75",
+   "readingTopic": "Free Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 76,
+   "code": "L7-76",
+   "readingTopic": "Writing: Journal",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 77,
+   "code": "L7-77",
+   "readingTopic": "Informal Letter Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 78,
+   "code": "L7-78",
+   "readingTopic": "Formal Letter Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 79,
+   "code": "L7-79",
+   "readingTopic": "Order Letter Writing",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L7",
+   "position": 80,
+   "code": "L7-80",
+   "readingTopic": "Filling Out a Form",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 7",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 1,
+   "code": "L8-1",
+   "readingTopic": "REVIEW",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 2,
+   "code": "L8-2",
+   "readingTopic": "Spelling Demons",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 3,
+   "code": "L8-3",
+   "readingTopic": "Capitalization",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 4,
+   "code": "L8-4",
+   "readingTopic": "[Verify L8-4]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 5,
+   "code": "L8-5",
+   "readingTopic": "Apostrophes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 6,
+   "code": "L8-6",
+   "readingTopic": "Commas",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 7,
+   "code": "L8-7",
+   "readingTopic": "Semicolons",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 8,
+   "code": "L8-8",
+   "readingTopic": "Colons",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 9,
+   "code": "L8-9",
+   "readingTopic": "Tenses",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 10,
+   "code": "L8-10",
+   "readingTopic": "Irregular Verb Tenses",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 11,
+   "code": "L8-11",
+   "readingTopic": "[Verify L8-11]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 12,
+   "code": "L8-12",
+   "readingTopic": "Pronouns",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 13,
+   "code": "L8-13",
+   "readingTopic": "S-V Agreement",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 14,
+   "code": "L8-14",
+   "readingTopic": "Sentences: Simple",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 15,
+   "code": "L8-15",
+   "readingTopic": "Sentences: Compound",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 16,
+   "code": "L8-16",
+   "readingTopic": "Sentences: Complex",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 17,
+   "code": "L8-17",
+   "readingTopic": "Subordination",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 18,
+   "code": "L8-18",
+   "readingTopic": "Types of Phrases",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 19,
+   "code": "L8-19",
+   "readingTopic": "Types of Sentences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 20,
+   "code": "L8-20",
+   "readingTopic": "Words Often Confused",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 21,
+   "code": "L8-21",
+   "readingTopic": "[Verify L8-21]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 22,
+   "code": "L8-22",
+   "readingTopic": "[Verify L8-22]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 23,
+   "code": "L8-23",
+   "readingTopic": "[Verify L8-23]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 24,
+   "code": "L8-24",
+   "readingTopic": "Base Words and Endings",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 25,
+   "code": "L8-25",
+   "readingTopic": "Hard to Spell Words",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 26,
+   "code": "L8-26",
+   "readingTopic": "Pronunciation / Respelling",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 27,
+   "code": "L8-27",
+   "readingTopic": "Syllabication",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 28,
+   "code": "L8-28",
+   "readingTopic": "Greek and Latin Roots",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 29,
+   "code": "L8-29",
+   "readingTopic": "Affixes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 30,
+   "code": "L8-30",
+   "readingTopic": "[Verify L8-30]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 31,
+   "code": "L8-31",
+   "readingTopic": "Context Clues",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 32,
+   "code": "L8-32",
+   "readingTopic": "Multiple Meaning Words",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 33,
+   "code": "L8-33",
+   "readingTopic": "Synonyms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 34,
+   "code": "L8-34",
+   "readingTopic": "Antonyms",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 35,
+   "code": "L8-35",
+   "readingTopic": "Analogies",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 36,
+   "code": "L8-36",
+   "readingTopic": "Foreign Words",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 37,
+   "code": "L8-37",
+   "readingTopic": "Shades of Meaning",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 38,
+   "code": "L8-38",
+   "readingTopic": "Revision",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 39,
+   "code": "L8-39",
+   "readingTopic": "Speech",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 40,
+   "code": "L8-40",
+   "readingTopic": "Fact and Opinion / Journal and Magazine",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 41,
+   "code": "L8-41",
+   "readingTopic": "Persuasion / Bias",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 42,
+   "code": "L8-42",
+   "readingTopic": "Fallacy",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 43,
+   "code": "L8-43",
+   "readingTopic": "Newspapers",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 44,
+   "code": "L8-44",
+   "readingTopic": "Magazines",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 45,
+   "code": "L8-45",
+   "readingTopic": "Preparing Applications",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 46,
+   "code": "L8-46",
+   "readingTopic": "Main Idea",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 47,
+   "code": "L8-47",
+   "readingTopic": "Sequence",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 48,
+   "code": "L8-48",
+   "readingTopic": "Drawing Conclusions",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 49,
+   "code": "L8-49",
+   "readingTopic": "Predicting Outcomes",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 50,
+   "code": "L8-50",
+   "readingTopic": "Author's Purpose",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 51,
+   "code": "L8-51",
+   "readingTopic": "Cause and Effect",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 52,
+   "code": "L8-52",
+   "readingTopic": "Inferences",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 53,
+   "code": "L8-53",
+   "readingTopic": "Literary Genres",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 54,
+   "code": "L8-54",
+   "readingTopic": "Characterization",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 55,
+   "code": "L8-55",
+   "readingTopic": "Setting",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 56,
+   "code": "L8-56",
+   "readingTopic": "Theme",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 57,
+   "code": "L8-57",
+   "readingTopic": "Mood",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 58,
+   "code": "L8-58",
+   "readingTopic": "Narration",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 59,
+   "code": "L8-59",
+   "readingTopic": "Symbolism",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 60,
+   "code": "L8-60",
+   "readingTopic": "Figurative Language",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 61,
+   "code": "L8-61",
+   "readingTopic": "Brainstorming",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 62,
+   "code": "L8-62",
+   "readingTopic": "Prewriting",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 63,
+   "code": "L8-63",
+   "readingTopic": "Thesis Statement",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 64,
+   "code": "L8-64",
+   "readingTopic": "Paragraph Development",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 65,
+   "code": "L8-65",
+   "readingTopic": "[Verify L8-65]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 66,
+   "code": "L8-66",
+   "readingTopic": "Paragraphs",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 67,
+   "code": "L8-67",
+   "readingTopic": "Research",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 68,
+   "code": "L8-68",
+   "readingTopic": "[Verify L8-68]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 69,
+   "code": "L8-69",
+   "readingTopic": "[Verify L8-69]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 70,
+   "code": "L8-70",
+   "readingTopic": "[Verify L8-70]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 71,
+   "code": "L8-71",
+   "readingTopic": "[Verify L8-71]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 72,
+   "code": "L8-72",
+   "readingTopic": "Writing: Expository",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 73,
+   "code": "L8-73",
+   "readingTopic": "Writing: Narrative",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 74,
+   "code": "L8-74",
+   "readingTopic": "[Verify L8-74]",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 75,
+   "code": "L8-75",
+   "readingTopic": "Writing: Persuasive",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 76,
+   "code": "L8-76",
+   "readingTopic": "Writing: Literature",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 77,
+   "code": "L8-77",
+   "readingTopic": "Writing: Informative",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 78,
+   "code": "L8-78",
+   "readingTopic": "Revision",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 79,
+   "code": "L8-79",
+   "readingTopic": "Speech",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  },
+  {
+   "level": "L8",
+   "position": 80,
+   "code": "L8-80",
+   "readingTopic": "Journal and Magazine",
+   "writingComponent": "[Verify from chart]",
+   "gradeRange": "Grade 8+",
+   "verify": true
+  }
+ ]
+}
