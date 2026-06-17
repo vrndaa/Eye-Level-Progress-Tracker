@@ -8,7 +8,7 @@ Replace the paper "SMILE Record" with a mobile-first tool that lets teachers log
 ## Organizational Context
 - Enopi East Cobb is a private tutoring center, not a public school.
 - Google account confirmed as Google Workspace (managed by enopieastcobb.com).
-- Each student has their OWN individual Google Classroom (e.g. "Ava Stone — Gr 4 [2026-2027]") — students are not grouped into shared classes. Multiple teachers post into the same student's Classroom.
+- Each student has their OWN individual Google Classroom (e.g. "Sample Student — Gr 4 [2026-2027]") — students are not grouped into shared classes. Multiple teachers post into the same student's Classroom.
 - A teacher works with 4 students at a time. Teachers rotate; no teacher "owns" a student.
 - An administrator assigns which student goes to which teacher each day — teachers don't self-select.
 - Logging happens with the student physically present: roughly a 60–90 second window per student.

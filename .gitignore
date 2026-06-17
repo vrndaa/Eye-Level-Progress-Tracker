@@ -9,5 +9,8 @@ service-account*.json
 .env
 .env.*
 
+# Real student PII — kept locally only, never committed/pushed
+classroom-screenshots/
+
 # Mac / editor junk
 .DS_Store
