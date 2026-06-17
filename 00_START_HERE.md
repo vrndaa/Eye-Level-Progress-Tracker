@@ -40,7 +40,7 @@ No separate Google Sheets database. Google Classroom itself is the data store:
 - Reasoning: teachers are on mobile phones during class; extensions don't work on mobile; native apps add install friction.
 - Teacher adds the PWA to their phone home screen once; after that, no login friction.
 - Plan: build a clickable POC first using fake data (no real Google login, no real Classroom API calls) to validate the UX before wiring up real integrations.
-- **Status: POC has not been built yet.** We got pulled into curriculum-mapping before circling back to it.
+- **Status: Phase 0 engine built (curriculum + parser + generator + position). POC UI not built yet.**
 
 ## Curriculum Data Gathered
 
