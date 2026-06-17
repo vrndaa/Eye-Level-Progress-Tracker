@@ -7,6 +7,7 @@
   "scripts": {
     "test": "tsx --test test/*.test.ts",
     "demo": "tsx src/demo.ts",
+    "demo:session": "tsx src/sessionDemo.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

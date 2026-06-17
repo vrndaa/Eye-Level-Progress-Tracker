@@ -1,0 +1,4 @@
+- confirm english curriculum
+- does every teacher have a different login?
+- how to authorize app in google workspace admin(??)
+- UI designs

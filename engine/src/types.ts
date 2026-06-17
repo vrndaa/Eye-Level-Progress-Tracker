@@ -71,3 +71,18 @@ export interface EnglishBooklet {
 }
 
 export type CurriculumMeta = MathBooklet | EnglishBooklet;
+
+/**
+ * A sequenced track a student progresses through. The two math tracks run in
+ * parallel (Critical Thinking trails Basic Thinking by a few levels); English is
+ * a single track. These mirror the columns on the paper SMILE form.
+ */
+export type TrackId = "math-basic" | "math-critical" | "english";
+
+/** A student. `id` maps to their individual Google Classroom courseId later. */
+export interface Student {
+  id: string;
+  name: string;
+  grade: string; // e.g. "Gr 4"
+  tracks: TrackId[]; // the sequenced tracks this student is enrolled in
+}
