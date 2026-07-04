@@ -1,16 +1,49 @@
 import React, { useEffect, useState } from 'react'
 import { ChevronDown, ChevronRight, Check, RotateCcw, AlertCircle, ExternalLink } from 'lucide-react'
-import { getSessions, clearFic, SLOTS, TEACHERS, SESSION_DATE } from './data/dataSource'
+import { getSessions, clearFic, connect, SHEETS_ENABLED, SLOTS, TEACHERS, SESSION_DATE } from './data/dataSource'
 
 export default function App() {
   const [sessions, setSessions] = useState(null)
   const [teacher, setTeacher] = useState(TEACHERS[0])
   const [slot, setSlot] = useState('4:00')
   const [open, setOpen] = useState({})
+  // LIVE mode gates loading behind a Google sign-in; OFFLINE loads immediately.
+  const [connected, setConnected] = useState(!SHEETS_ENABLED)
+  const [connecting, setConnecting] = useState(false)
+  const [authError, setAuthError] = useState(null)
 
   useEffect(() => {
-    getSessions().then(setSessions)
-  }, [])
+    if (connected) getSessions().then(setSessions)
+  }, [connected])
+
+  const handleConnect = async () => {
+    setConnecting(true)
+    setAuthError(null)
+    try {
+      await connect()
+      setConnected(true)
+    } catch (e) {
+      setAuthError(e.message || 'Sign-in failed')
+    } finally {
+      setConnecting(false)
+    }
+  }
+
+  if (SHEETS_ENABLED && !connected) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center gap-3 p-6 text-center">
+        <p className="text-sm text-gray-600">This session view reads and updates a live Google Sheet.</p>
+        <button
+          onClick={handleConnect}
+          disabled={connecting}
+          className="text-sm rounded-lg px-4 py-2 bg-gray-900 text-white disabled:opacity-50"
+        >
+          {connecting ? 'Connecting…' : 'Connect Google Sheets'}
+        </button>
+        {authError && <p className="text-xs text-red-600 max-w-xs">{authError}</p>}
+      </div>
+    )
+  }
 
   if (!sessions) {
     return <div className="min-h-screen bg-gray-50 flex items-center justify-center text-gray-400 text-sm">Loading session…</div>
@@ -22,22 +55,32 @@ export default function App() {
 
   const toggleClear = async (studentId, ficId) => {
     let nextCleared = false
-    setSessions((prev) =>
+    const flip = (value) => (prev) =>
       prev.map((sess) => ({
         ...sess,
         students: sess.students.map((st) =>
           st.id !== studentId ? st : {
             ...st,
-            fics: st.fics.map((f) => {
-              if (f.id !== ficId) return f
-              nextCleared = !f.cleared
-              return { ...f, cleared: nextCleared }
-            }),
+            fics: st.fics.map((f) => (f.id !== ficId ? f : { ...f, cleared: value })),
           }
         ),
       }))
-    )
-    clearFic(ficId, nextCleared)
+    // Optimistic update; revert if the live write-back fails.
+    setSessions((prev) => {
+      const target = prev
+        .flatMap((s) => s.students)
+        .find((st) => st.id === studentId)
+        ?.fics.find((f) => f.id === ficId)
+      nextCleared = target ? !target.cleared : true
+      return flip(nextCleared)(prev)
+    })
+    try {
+      await clearFic(ficId, nextCleared)
+    } catch (e) {
+      setSessions(flip(!nextCleared))
+      console.error('Failed to write clear to sheet:', e)
+      alert('Could not update the sheet — reverted. ' + (e.message || ''))
+    }
   }
 
   const toggleOpen = (id) => setOpen((o) => ({ ...o, [id]: !o[id] }))
