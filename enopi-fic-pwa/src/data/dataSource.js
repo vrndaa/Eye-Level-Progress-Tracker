@@ -1,7 +1,8 @@
 // DATA SOURCE — the single seam between the UI and where data actually lives.
 //
-// Right now everything reads from mock data. To go live, replace the bodies of
-// these two functions with Google Sheets API calls against the FIC Registry.
+// For the POC this reads from registry.json, generated from FIC_Registry_POC_data.xlsx
+// (see scripts/build-registry.py). To go live, replace the bodies of these two functions
+// with Google Sheets API calls against the FIC Registry.
 // The UI never changes — it only knows about this contract:
 //
 //   getSessions() -> Promise<Session[]>
@@ -13,11 +14,12 @@
 //     Writes Status (Outstanding <-> Cleared), Cleared Date and Teacher back to
 //     that one registry row. It is an UPDATE, never a delete — the row is the record.
 
-import { buildSessions } from './mockData'
+import registry from './registry.json'
 
 export async function getSessions() {
   // TODO(live): read the FIC Registry sheet via the Sheets API and map rows to Sessions.
-  return buildSessions()
+  // Deep-clone so the UI can mutate its copy without touching the source data.
+  return structuredClone(registry.sessions)
 }
 
 export async function clearFic(/* ficId, cleared */) {
@@ -26,4 +28,6 @@ export async function clearFic(/* ficId, cleared */) {
   return
 }
 
-export { SLOTS, TEACHERS, SESSION_DATE } from './mockData'
+export const SLOTS = registry.SLOTS
+export const TEACHERS = registry.TEACHERS
+export const SESSION_DATE = registry.SESSION_DATE
