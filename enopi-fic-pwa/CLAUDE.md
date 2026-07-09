@@ -1,18 +1,23 @@
 # CLAUDE.md — Enopi FIC Registry PWA
 
 ## What this is
-A mobile-first PWA that gives teachers a **glanceable, per-session view of student FICs**
-(Fix-In-Class items) so they know who needs what at session start — instead of hunting
-through Google Classroom. Built for Enopi East Cobb (Eye Level / e·nopi supplementary
-tutoring). This is the **visibility layer (phase 1)**.
+A mobile-first PWA that lets teachers **search any student and see their full progress**
+at a glance — what's assigned, what's a FIC (Fix-In-Class), what's done — pulled from Google
+Classroom. Built for Enopi East Cobb (Eye Level / e·nopi supplementary tutoring).
+**Read-only lookup tool** (no assigning — that stays in Classroom).
 
-## Status
-Two modes, one codebase:
-- **Offline (default):** reads `src/data/registry.json`, generated from `FIC_Registry_POC_data.xlsx`
-  by `scripts/build-registry.py`. No accounts, no network — the POC/demo path.
-- **Live:** when a Google Sheet is configured via `.env` (`VITE_GOOGLE_CLIENT_ID` +
-  `VITE_SPREADSHEET_ID`), reads/writes that sheet through the Sheets API. Clearing a FIC
-  writes Status/Cleared Date/Cleared By back to the row. Setup: `SETUP_GOOGLE_SHEETS.md`.
+## Status — POC on mock data (director demo)
+Pivoted (per teacher/director feedback) from a session-based "clear the FICs" tool to a
+**student-centric, read-only progress lookup**. Currently runs on **mock Classroom data**
+(`src/data/mockClassroom.js`) — no accounts, no network. Going live = swap the two data-source
+functions for Google Classroom API calls; the UI won't change.
+
+Two screens:
+- **Home:** search box + student list (name, grade, FIC / Not-done counts). Search handles
+  make-ups & walk-ins — you find *anyone*, not just the scheduled slot.
+- **Student progress:** summary strip (done / FIC / not-done) + work grouped by subject → topic
+  (Classwork / To Be Graded / Homework / Graded), each item color-coded with dates, the
+  **Assigned** material and the **Given** notebook.
 
 Stack: Vite · React · Tailwind v4 · vite-plugin-pwa · lucide-react.
 
@@ -25,25 +30,28 @@ npm run dev      # build: npm run build
 ## Architecture — the one seam that matters
 All data flows through **`src/data/dataSource.js`**. The UI (`App.jsx`) only knows this contract:
 
-- `getSessions() -> Promise<Session[]>`  — `Session = { teacher, slot, students }`
-- `clearFic(ficId, cleared) -> Promise<void>` — **UPDATE** the registry row
-  (Status Outstanding⇄Cleared + Cleared Date + Teacher). **Never delete — the row is the record.**
+- `getStudents() -> Promise<Student[]>`
+  `Student = { id, name, grade, counts: { done, fic, notdone } }`
+- `getStudentProgress(id) -> Promise<Progress | null>`
+  `Progress = { id, name, grade, counts, items: Item[] }`
+  `Item = { id, subject, topic, title, status, posted, due, fixBy, material, given }`
 
-`dataSource.js` routes to offline (`registry.json`) or live (`sheets.js`) based on
-`SHEETS_ENABLED` (googleConfig.js). Live adds one method — `connect()` — which must be
-called from a click to acquire the Google OAuth token. **The UI never branches on mode.**
-
-Data shapes:
-- `Student = { id, name, grade, note, unmatched, fics }`
-- `Fic = { id, program, code, detail, cleared }`  (`detail` = the FIC-level detail, e.g. "Q15")
+Key fields: `status` = `'done' | 'fic' | 'notdone'` (green / orange / red, **per item**).
+`material` = the **assigned** Classroom coursework; `given` = the **physical notebook**
+(recorded in the assignment header). FIC = an item returned to Classwork with a `fixBy` date.
 
 ## Next tasks (in order)
-1. Confirm the data blocker (below) with director/drafter — still hand-joined.
-2. ~~Implement `getSessions()` / `clearFic()` via Sheets API~~ — done (behind `.env` config).
-3. Deep-link each FIC to its exact Classroom assignment (see design direction).
-4. Layer Vrnda's visual design over the plain scaffold.
-5. Deploy (add the hosted origin to the OAuth client; move consent screen off "Testing"
-   once beyond test users).
+1. Show the director the POC (mock data); gather feedback on the two screens.
+2. Wire the real Google Classroom API behind `dataSource.js` (courses = students; coursework +
+   submission state → items). Read-only scopes.
+3. Layer Vrnda's visual design over the plain scaffold.
+4. (Parked) optional lightweight "mark as done".
+
+## Legacy (superseded by the pivot)
+`mockData.js`, `registry.json`, `build-registry.py`, `sheets.js`, `googleConfig.js`,
+`SETUP_GOOGLE_SHEETS.md` and the FIC-Registry-sheet approach belong to the earlier
+session/Sheets design. Kept for reference; not used by the current app. The Google **Sheets**
+write-back is abandoned — the real source is **Classroom**.
 
 ## Blocker (data, not code)
 The roster (Weekly Class Schedule sheet) and the FICs (grader's list) have **no shared student

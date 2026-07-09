@@ -1,201 +1,197 @@
-import React, { useEffect, useState } from 'react'
-import { ChevronDown, ChevronRight, Check, RotateCcw, AlertCircle, ExternalLink } from 'lucide-react'
-import { getSessions, clearFic, connect, SHEETS_ENABLED, SLOTS, TEACHERS, SESSION_DATE } from './data/dataSource'
+import React, { useEffect, useMemo, useState } from 'react'
+import { Search, ChevronLeft, ChevronRight, FileText, BookOpen } from 'lucide-react'
+import { getStudents, getStudentProgress, TOPIC_ORDER, SUBJECT_ORDER } from './data/dataSource'
+
+// Status → color styling. One place so the dots, badges and text stay consistent.
+const STATUS = {
+  done:    { label: 'Done',     dot: 'bg-green-500',  chip: 'bg-green-100 text-green-700',   text: 'text-green-700' },
+  fic:     { label: 'FIC',      dot: 'bg-orange-500', chip: 'bg-orange-100 text-orange-700', text: 'text-orange-700' },
+  notdone: { label: 'Not done', dot: 'bg-red-500',    chip: 'bg-red-100 text-red-700',       text: 'text-red-700' },
+}
 
 export default function App() {
-  const [sessions, setSessions] = useState(null)
-  const [teacher, setTeacher] = useState(TEACHERS[0])
-  const [slot, setSlot] = useState('4:00')
-  const [open, setOpen] = useState({})
-  // LIVE mode gates loading behind a Google sign-in; OFFLINE loads immediately.
-  const [connected, setConnected] = useState(!SHEETS_ENABLED)
-  const [connecting, setConnecting] = useState(false)
-  const [authError, setAuthError] = useState(null)
+  const [students, setStudents] = useState(null)
+  const [selectedId, setSelectedId] = useState(null)
 
-  useEffect(() => {
-    if (connected) getSessions().then(setSessions)
-  }, [connected])
+  useEffect(() => { getStudents().then(setStudents) }, [])
 
-  const handleConnect = async () => {
-    setConnecting(true)
-    setAuthError(null)
-    try {
-      await connect()
-      setConnected(true)
-    } catch (e) {
-      setAuthError(e.message || 'Sign-in failed')
-    } finally {
-      setConnecting(false)
-    }
+  if (!students) {
+    return <div className="min-h-screen bg-gray-50 flex items-center justify-center text-gray-400 text-sm">Loading…</div>
   }
-
-  if (SHEETS_ENABLED && !connected) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center gap-3 p-6 text-center">
-        <p className="text-sm text-gray-600">This session view reads and updates a live Google Sheet.</p>
-        <button
-          onClick={handleConnect}
-          disabled={connecting}
-          className="text-sm rounded-lg px-4 py-2 bg-gray-900 text-white disabled:opacity-50"
-        >
-          {connecting ? 'Connecting…' : 'Connect Google Sheets'}
-        </button>
-        {authError && <p className="text-xs text-red-600 max-w-xs">{authError}</p>}
-      </div>
-    )
-  }
-
-  if (!sessions) {
-    return <div className="min-h-screen bg-gray-50 flex items-center justify-center text-gray-400 text-sm">Loading session…</div>
-  }
-
-  const current = sessions.find((s) => s.teacher === teacher && s.slot === slot)
-  const roster = current ? current.students : []
-  const outstanding = roster.reduce((n, s) => n + s.fics.filter((f) => !f.cleared).length, 0)
-
-  const toggleClear = async (studentId, ficId) => {
-    let nextCleared = false
-    const flip = (value) => (prev) =>
-      prev.map((sess) => ({
-        ...sess,
-        students: sess.students.map((st) =>
-          st.id !== studentId ? st : {
-            ...st,
-            fics: st.fics.map((f) => (f.id !== ficId ? f : { ...f, cleared: value })),
-          }
-        ),
-      }))
-    // Optimistic update; revert if the live write-back fails.
-    setSessions((prev) => {
-      const target = prev
-        .flatMap((s) => s.students)
-        .find((st) => st.id === studentId)
-        ?.fics.find((f) => f.id === ficId)
-      nextCleared = target ? !target.cleared : true
-      return flip(nextCleared)(prev)
-    })
-    try {
-      await clearFic(ficId, nextCleared)
-    } catch (e) {
-      setSessions(flip(!nextCleared))
-      console.error('Failed to write clear to sheet:', e)
-      alert('Could not update the sheet — reverted. ' + (e.message || ''))
-    }
-  }
-
-  const toggleOpen = (id) => setOpen((o) => ({ ...o, [id]: !o[id] }))
-  const reset = () => getSessions().then(setSessions)
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <div className="max-w-md mx-auto p-4">
-        <div className="flex items-baseline justify-between">
-          <h1 className="text-xl font-semibold">Session view</h1>
-          <span className="text-sm text-gray-500">{SESSION_DATE}</span>
-        </div>
+        {selectedId
+          ? <StudentProgress studentId={selectedId} onBack={() => setSelectedId(null)} />
+          : <Home students={students} onSelect={setSelectedId} />}
+      </div>
+    </div>
+  )
+}
 
-        <div className="mt-3 flex gap-2">
-          {TEACHERS.map((t) => (
-            <button
-              key={t}
-              onClick={() => setTeacher(t)}
-              className={`flex-1 text-sm rounded-lg px-3 py-2 border ${
-                teacher === t ? 'bg-gray-900 text-white border-gray-900' : 'bg-white text-gray-700 border-gray-300'
-              }`}
-            >
-              {t}
-            </button>
-          ))}
-        </div>
+function Home({ students, onSelect }) {
+  const [q, setQ] = useState('')
+  const filtered = useMemo(() => {
+    const t = q.trim().toLowerCase()
+    if (!t) return students
+    return students.filter((s) => s.name.toLowerCase().includes(t) || s.grade.toLowerCase().includes(t))
+  }, [q, students])
 
-        <div className="mt-2 grid grid-cols-4 gap-2">
-          {SLOTS.map((s) => (
-            <button
-              key={s}
-              onClick={() => setSlot(s)}
-              className={`text-sm rounded-lg py-2 border ${
-                slot === s ? 'bg-gray-200 border-gray-400 font-medium' : 'bg-white border-gray-300 text-gray-600'
-              }`}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
+  return (
+    <>
+      <h1 className="text-xl font-semibold">Student progress</h1>
+      <p className="text-sm text-gray-500 mt-0.5">Search any student — scheduled, make-up or walk-in.</p>
 
-        <div className="mt-4 text-sm text-gray-600">
-          <span className="font-medium text-gray-900">{teacher}</span> · {slot} · {roster.length} students ·{' '}
-          <span className="font-medium text-gray-900">{outstanding} outstanding</span>
-        </div>
+      <div className="mt-3 relative">
+        <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+        <input
+          autoFocus
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder="Search by name or grade…"
+          className="w-full rounded-lg border border-gray-300 bg-white pl-9 pr-3 py-2.5 text-sm outline-none focus:border-gray-500"
+        />
+      </div>
 
-        <div className="mt-2 space-y-2">
-          {roster.map((s) => {
-            const isOpen = !!open[s.id]
-            const openCount = s.fics.filter((f) => !f.cleared).length
-            const done = s.fics.length > 0 && openCount === 0
-            return (
-              <div key={s.id} className="rounded-lg border border-gray-200 bg-white overflow-hidden">
-                <button onClick={() => toggleOpen(s.id)} className="w-full flex items-center gap-2 px-3 py-3 text-left hover:bg-gray-50">
-                  {isOpen ? <ChevronDown className="w-4 h-4 text-gray-400 shrink-0" /> : <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />}
-                  <span className="font-medium">{s.name}</span>
-                  <span className="text-xs text-gray-400">{s.grade}</span>
-                  {s.note && (
-                    <span className="text-[10px] text-amber-600 inline-flex items-center gap-0.5">
-                      <AlertCircle className="w-3 h-3" />
-                      {s.note}
-                    </span>
-                  )}
-                  <span className="ml-auto shrink-0">
-                    {s.unmatched ? (
-                      <span className="text-xs text-gray-400">no FICs logged</span>
-                    ) : done ? (
-                      <span className="inline-flex items-center gap-1 text-xs text-green-600"><Check className="w-3.5 h-3.5" /> clear</span>
-                    ) : (
-                      <span className="text-xs font-medium text-gray-700 bg-gray-100 rounded-full px-2 py-0.5">{openCount} open</span>
-                    )}
-                  </span>
-                </button>
+      <div className="mt-3 space-y-2">
+        {filtered.map((s) => (
+          <button
+            key={s.id}
+            onClick={() => onSelect(s.id)}
+            className="w-full flex items-center gap-3 rounded-lg border border-gray-200 bg-white px-3 py-3 text-left hover:bg-gray-50"
+          >
+            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 text-sm font-medium text-gray-600 shrink-0">
+              {s.name.slice(0, 1)}
+            </span>
+            <span className="min-w-0">
+              <span className="font-medium block truncate">{s.name}</span>
+              <span className="text-xs text-gray-400">{s.grade}</span>
+            </span>
+            <span className="ml-auto flex items-center gap-1.5 shrink-0">
+              {s.counts.fic > 0 && <Count n={s.counts.fic} kind="fic" />}
+              {s.counts.notdone > 0 && <Count n={s.counts.notdone} kind="notdone" />}
+              <ChevronRight className="w-4 h-4 text-gray-300" />
+            </span>
+          </button>
+        ))}
+        {filtered.length === 0 && <p className="text-center text-sm text-gray-400 py-8">No students match “{q}”.</p>}
+      </div>
+    </>
+  )
+}
 
-                {isOpen && (
-                  <div className="px-3 pb-3 space-y-1.5">
-                    {s.fics.length === 0 && <p className="text-xs text-gray-400 py-1">No FICs logged for this student.</p>}
-                    {s.fics.map((f) => (
-                      <div key={f.id} className="flex items-center gap-2 rounded-md border border-gray-100 px-2 py-1.5">
-                        <span className="text-xs rounded px-1.5 py-0.5 bg-white text-gray-700 border border-gray-300">Eng</span>
-                        <span className={`text-sm ${f.cleared ? 'line-through text-gray-400' : 'text-gray-800'}`}>{f.code}</span>
-                        {f.detail && (
-                          <span className={`text-xs ${f.cleared ? 'text-gray-300' : 'text-gray-500'}`}>· {f.detail}</span>
-                        )}
-                        {!f.cleared && (
-                          <a
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            title="Deep-link to the Classroom assignment (wired in the live build)"
-                            className="text-gray-300 hover:text-gray-500"
-                          >
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </a>
-                        )}
-                        <button
-                          onClick={() => toggleClear(s.id, f.id)}
-                          className={`ml-auto text-xs rounded-md px-2 py-1 ${
-                            f.cleared ? 'text-gray-500 hover:bg-gray-100' : 'text-white bg-gray-800 hover:bg-gray-700'
-                          }`}
-                        >
-                          {f.cleared ? 'Undo' : 'Clear'}
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                )}
+function Count({ n, kind }) {
+  const s = STATUS[kind]
+  return (
+    <span className={`inline-flex items-center gap-1 text-xs rounded-full px-2 py-0.5 ${s.chip}`}>
+      <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`} />
+      {n} {s.label}
+    </span>
+  )
+}
+
+function StudentProgress({ studentId, onBack }) {
+  const [data, setData] = useState(null)
+  useEffect(() => { getStudentProgress(studentId).then(setData) }, [studentId])
+
+  if (!data) return <p className="text-sm text-gray-400 py-8">Loading…</p>
+
+  // Group items by subject → topic in the intended display order.
+  const groups = []
+  for (const subject of SUBJECT_ORDER) {
+    const subjectItems = data.items.filter((i) => i.subject === subject)
+    if (subjectItems.length === 0) continue
+    const topics = []
+    for (const topic of TOPIC_ORDER) {
+      const items = subjectItems.filter((i) => i.topic === topic)
+      if (items.length) topics.push({ topic, items })
+    }
+    groups.push({ subject, topics })
+  }
+
+  return (
+    <>
+      <button onClick={onBack} className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-800">
+        <ChevronLeft className="w-4 h-4" /> All students
+      </button>
+
+      <div className="mt-2 flex items-baseline justify-between">
+        <h1 className="text-xl font-semibold">{data.name}</h1>
+        <span className="text-sm text-gray-400">{data.grade}</span>
+      </div>
+
+      {/* Summary strip */}
+      <div className="mt-3 flex gap-2">
+        <Summary n={data.counts.done} kind="done" />
+        <Summary n={data.counts.fic} kind="fic" />
+        <Summary n={data.counts.notdone} kind="notdone" />
+      </div>
+
+      {groups.map((g) => (
+        <div key={g.subject} className="mt-5">
+          <h2 className="text-sm font-semibold text-gray-700">{g.subject}</h2>
+          {g.topics.map((t) => (
+            <div key={t.topic} className="mt-2">
+              <p className="text-xs uppercase tracking-wide text-gray-400">{t.topic}</p>
+              <div className="mt-1 space-y-1.5">
+                {t.items.map((item) => <ItemRow key={item.id} item={item} />)}
               </div>
-            )
-          })}
-          {roster.length === 0 && <p className="text-center text-sm text-gray-400 py-8">No students in this slot.</p>}
+            </div>
+          ))}
         </div>
+      ))}
+    </>
+  )
+}
 
-        <button onClick={reset} className="mt-4 inline-flex items-center gap-1 text-xs text-gray-400 hover:text-gray-600">
-          <RotateCcw className="w-3.5 h-3.5" /> Reset demo
-        </button>
+function Summary({ n, kind }) {
+  const s = STATUS[kind]
+  return (
+    <div className="flex-1 rounded-lg border border-gray-200 bg-white px-3 py-2 text-center">
+      <div className={`text-lg font-semibold ${s.text}`}>{n}</div>
+      <div className="text-[11px] text-gray-500 flex items-center justify-center gap-1">
+        <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`} /> {s.label}
+      </div>
+    </div>
+  )
+}
+
+function ItemRow({ item }) {
+  const s = STATUS[item.status]
+  return (
+    <div className="rounded-lg border border-gray-200 bg-white px-3 py-2.5">
+      <div className="flex items-start gap-2">
+        <span className={`mt-1.5 w-2.5 h-2.5 rounded-full shrink-0 ${s.dot}`} title={s.label} />
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-medium text-gray-900">{item.title}</span>
+            <span className={`text-[10px] rounded-full px-1.5 py-0.5 whitespace-nowrap shrink-0 ml-auto ${s.chip}`}>{s.label}</span>
+          </div>
+
+          {item.status === 'fic' && item.fixBy && (
+            <p className="text-xs text-orange-700 mt-0.5">Return / fix by {item.fixBy}</p>
+          )}
+
+          {/* Given vs assigned — the distinction the teachers asked for */}
+          <div className="mt-1 space-y-0.5">
+            <p className="text-xs text-gray-500 flex items-center gap-1">
+              <FileText className="w-3 h-3 text-gray-400 shrink-0" />
+              <span className="text-gray-400">Assigned:</span> {item.material}
+            </p>
+            {item.given && (
+              <p className="text-xs text-gray-500 flex items-center gap-1">
+                <BookOpen className="w-3 h-3 text-gray-400 shrink-0" />
+                <span className="text-gray-400">Given:</span> {item.given}
+              </p>
+            )}
+          </div>
+
+          <p className="text-[11px] text-gray-400 mt-1">
+            {item.posted && <>Posted {item.posted}</>}
+            {item.due && <> · Due {item.due}</>}
+          </p>
+        </div>
       </div>
     </div>
   )
