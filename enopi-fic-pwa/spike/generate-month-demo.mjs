@@ -11,7 +11,11 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUT = path.join(__dirname, '..', 'src', 'data', 'classroomData.json')
 
-const DATES = ['Jun 16', 'Jun 19', 'Jun 23', 'Jun 26', 'Jun 30', 'Jul 3', 'Jul 7', 'Jul 10', 'Jul 14']
+// Dates are anchored to TODAY so the demo always reads correctly whenever it's shown
+// (the most recent session = today; current work due in a few days; one item overdue).
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const dayOffset = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return `${MONTHS[d.getMonth()]} ${d.getDate()}` }
+const DATES = [-30, -26, -22, -18, -14, -10, -6, -3, 0].map(dayOffset) // oldest → today
 
 const STUDENTS = [
   { id: 'stu-priya', name: 'Priya Nair', grade: 'Gr5' },
@@ -50,20 +54,22 @@ function build() {
         picks.forEach((t, k) => {
           const level = t.prefix ? `${t.prefix}-${t.n}` : `Week ${t.n}`
           t.n += 1
-          // Older sessions done; most recent not started; one FIC just before.
+          // Older sessions done; most recent not started (with a due date); one FIC just before.
           let status = 'done'
           let fixBy = null
-          if (last) status = 'notdone'
-          else if (nearLast && k === 0) { status = 'fic'; fixBy = 'Jul 12' }
-          const ficTag = status === 'fic' ? '. fic Jul12' : ''
+          let due = ''
+          if (last) { status = 'notdone'; due = k === 0 ? dayOffset(4) : dayOffset(2) }
+          else if (nearLast && k === 0) { status = 'fic'; fixBy = dayOffset(-1) }
+          const ficTag = status === 'fic' ? `. fic ${dayOffset(-1).replace(' ', '')}` : ''
           items.push({
             id: `${stu.id}-${subject}-${di}-${k}`,
             subject,
             topic: status === 'done' ? 'Graded' : 'Classwork',
             title: `${t.name} ${level}${ficTag}`,
             status,
+            wasFic: status === 'fic',
             posted: date,
-            due: '',
+            due,
             fixBy,
             material: '',
             given: 'physical notebook',
@@ -71,6 +77,13 @@ function build() {
         })
       })
     }
+    // Showcase the director's feedback:
+    // (a) a CLEARED fic — was a fic, now graded (kept for history, not outstanding)
+    items.push({ id: `${stu.id}-clearedfic`, subject: 'English', topic: 'Graded', title: `DGP D-3. fic ${dayOffset(-22).replace(' ', '')}`,
+      status: 'done', wasFic: true, posted: dayOffset(-24), due: '', fixBy: dayOffset(-22), material: '', given: 'physical notebook' })
+    // (b) an OVERDUE not-started — assigned earlier, due date already passed
+    items.push({ id: `${stu.id}-overdue`, subject: 'English', topic: 'Homework', title: 'Comprehension E-4',
+      status: 'notdone', wasFic: false, posted: dayOffset(-12), due: dayOffset(-5), fixBy: null, material: '', given: 'physical notebook' })
     return { ...stu, items }
   })
   return { students }

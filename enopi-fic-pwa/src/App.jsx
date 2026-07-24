@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { Search, ChevronDown, ChevronRight, X, Smartphone, Tablet } from 'lucide-react'
+import { Search, ChevronDown, ChevronRight, X, Plus, Smartphone, Tablet } from 'lucide-react'
 import { getStudents, getStudentProgress } from './data/dataSource'
-import { TEACHERS, SLOTS, rosterFor } from './data/schedule'
-import { STATUS, subjectItems, todo, sessions, grid } from './data/progress'
+import { SLOTS, teachersFor, rosterFor } from './data/schedule'
+import { subjectItems, todo, sessions, grid, isOverdue } from './data/progress'
 
-const SUBJECTS = ['Math', 'English']
-const ROOM_LABEL = { Math: 'Maths room', English: 'English room' }
+const SUBJECTS = ['English', 'Math']
+const ROOM_LABEL = { English: 'English Room', Math: 'Maths Room' }
 
 export default function App() {
-  const [device, setDevice] = useState('mobile')
-  const [data, setData] = useState(null) // { [name]: { id, name, grade, items } }
+  const [device, setDevice] = useState('tablet')
+  const [data, setData] = useState(null)
 
   useEffect(() => {
     getStudents().then(async (list) => {
@@ -21,21 +21,20 @@ export default function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-white">
       <div className="flex items-center justify-between max-w-5xl mx-auto px-4 py-3">
-        <span className="text-sm font-medium text-gray-500">Enopi progress · demo</span>
-        <div className="flex gap-1 bg-white rounded-lg border border-gray-300 p-0.5">
-          <button onClick={() => setDevice('mobile')} className={`flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-md ${device === 'mobile' ? 'bg-gray-900 text-white' : 'text-gray-600'}`}>
+        <span className="text-sm font-semibold text-gray-800">Eye Level Progress Tracker</span>
+        <div className="flex gap-1 bg-white rounded-lg border-[0.5px] border-black p-0.5">
+          <button onClick={() => setDevice('mobile')} className={`flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-md ${device === 'mobile' ? 'bg-[#FDD776] text-gray-900' : 'text-gray-600'}`}>
             <Smartphone className="w-3.5 h-3.5" /> Mobile
           </button>
-          <button onClick={() => setDevice('tablet')} className={`flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-md ${device === 'tablet' ? 'bg-gray-900 text-white' : 'text-gray-600'}`}>
+          <button onClick={() => setDevice('tablet')} className={`flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-md ${device === 'tablet' ? 'bg-[#FDD776] text-gray-900' : 'text-gray-600'}`}>
             <Tablet className="w-3.5 h-3.5" /> Tablet
           </button>
         </div>
       </div>
-
-      <div className="flex justify-center pb-10 px-4">
-        <div className={`bg-gray-50 border border-gray-300 rounded-[22px] shadow-sm overflow-hidden ${device === 'mobile' ? 'w-[390px]' : 'w-full max-w-[860px]'}`}>
+      <div className="flex justify-center pb-12 px-4">
+        <div className={device === 'mobile' ? 'w-[390px]' : 'w-full max-w-[900px]'}>
           {data ? <Session device={device} data={data} /> : <div className="p-10 text-center text-sm text-gray-400">Loading…</div>}
         </div>
       </div>
@@ -44,102 +43,169 @@ export default function App() {
 }
 
 function Session({ device, data }) {
-  const [subject, setSubject] = useState('Math')
-  const [teacher, setTeacher] = useState(TEACHERS[0])
-  const [slot, setSlot] = useState('4:00')
+  const [subject, setSubject] = useState('English')
+  const [teacher, setTeacher] = useState(teachersFor('English')[0])
+  const [slot, setSlot] = useState('4:00pm')
   const [query, setQuery] = useState('')
-  const [openId, setOpenId] = useState(null)   // inline dropdown
-  const [viewId, setViewId] = useState(null)    // progress modal
+  const [walkins, setWalkins] = useState([]) // students added to this group on the fly
+  const [openId, setOpenId] = useState(null)
+  const [viewId, setViewId] = useState(null)
 
-  const roster = useMemo(() => {
+  const teachers = teachersFor(subject)
+
+  // Changing the group resets who's in it (and any walk-ins added to the previous group).
+  const resetGroup = () => { setOpenId(null); setWalkins([]); setQuery('') }
+  const pickSubject = (s) => { setSubject(s); setTeacher(teachersFor(s)[0]); resetGroup() }
+  const pickTeacher = (t) => { setTeacher(t); resetGroup() }
+  const pickSlot = (s) => { setSlot(s); resetGroup() }
+
+  // The group = scheduled students for this slot + any walk-ins added.
+  const names = useMemo(() => {
+    const scheduled = rosterFor(subject, teacher, slot)
+    return [...scheduled, ...walkins.filter((n) => !scheduled.includes(n))]
+  }, [subject, teacher, slot, walkins])
+  const roster = names.map((n) => data[n]).filter(Boolean)
+  const scheduledSet = useMemo(() => new Set(rosterFor(subject, teacher, slot)), [subject, teacher, slot])
+
+  // Search matches ANY student not already in the group — pick one to add as a walk-in.
+  const results = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (q) return Object.values(data).filter((s) => s.name.toLowerCase().includes(q))
-    return rosterFor(teacher, slot).map((name) => data[name]).filter(Boolean)
-  }, [data, teacher, slot, query])
+    if (!q) return []
+    return Object.values(data)
+      .filter((s) => s.name.toLowerCase().includes(q) && !names.includes(s.name))
+      .slice(0, 6)
+  }, [data, query, names])
 
-  const pad = device === 'mobile' ? 'p-4' : 'p-6'
+  const addWalkin = (name) => { setWalkins((w) => [...w, name]); setQuery('') }
+  const removeWalkin = (name) => setWalkins((w) => w.filter((n) => n !== name))
+
+  const Toggle = ({ active, onClick, children }) => (
+    <button onClick={onClick}
+      className={`text-sm rounded-lg px-3 py-3 font-medium border-[0.5px] border-black transition-colors ${active
+        ? 'bg-[#FDD776] text-gray-900'
+        : 'bg-white text-gray-700 hover:bg-gray-50'}`}>
+      {children}
+    </button>
+  )
 
   return (
-    <div className={pad}>
-      <h1 className="text-lg font-semibold">Session view</h1>
-
-      <div className="mt-3 flex gap-2">
-        {SUBJECTS.map((s) => (
-          <button key={s} onClick={() => setSubject(s)}
-            className={`flex-1 text-sm rounded-lg px-3 py-2 border ${subject === s ? 'bg-gray-900 text-white border-gray-900' : 'bg-white text-gray-700 border-gray-300'}`}>
-            {ROOM_LABEL[s]}
-          </button>
-        ))}
+    <div className="space-y-3">
+      {/* Controls card */}
+      <div className="bg-white rounded-2xl border-[1.5px] border-black p-4 space-y-2">
+        <div className="grid grid-cols-2 gap-2">
+          {SUBJECTS.map((s) => <Toggle key={s} active={subject === s} onClick={() => pickSubject(s)}>{ROOM_LABEL[s]}</Toggle>)}
+        </div>
+        <div className="grid grid-cols-2 gap-2">
+          {teachers.map((t) => <Toggle key={t} active={teacher === t} onClick={() => pickTeacher(t)}>{t}</Toggle>)}
+        </div>
+        <div className={`grid ${device === 'mobile' ? 'grid-cols-2' : 'grid-cols-4'} gap-2`}>
+          {SLOTS.map((s) => <Toggle key={s} active={slot === s} onClick={() => pickSlot(s)}>{s}</Toggle>)}
+        </div>
       </div>
 
-      <div className="mt-2 flex gap-2">
-        {TEACHERS.map((t) => (
-          <button key={t} onClick={() => { setTeacher(t); setOpenId(null) }}
-            className={`flex-1 text-sm rounded-lg px-3 py-2 border ${teacher === t ? 'bg-gray-200 border-gray-400 font-medium' : 'bg-white text-gray-600 border-gray-300'}`}>
-            {t}
-          </button>
-        ))}
+      {/* Roster card */}
+      <div className="bg-white rounded-2xl border-[1.5px] border-black p-4">
+        <div className="relative mb-3">
+          <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Add a walk-in student…"
+            className="w-full rounded-lg bg-gray-50 border-[0.5px] border-black pl-9 pr-3 py-3 text-sm outline-none focus:bg-white" />
+          {results.length > 0 && (
+            <div className="absolute z-20 mt-1 w-full bg-white rounded-lg border-[0.5px] border-black overflow-hidden">
+              {results.map((s) => (
+                <button key={s.id} onClick={() => addWalkin(s.name)}
+                  className="w-full flex items-center gap-2 px-3 py-2.5 text-left text-sm hover:bg-[#f5ecd8]">
+                  <Plus className="w-4 h-4 text-[#b8923c] shrink-0" />
+                  <span className="font-medium">{s.name}</span>
+                  <span className="text-xs text-gray-400">{s.grade}</span>
+                  <span className="ml-auto text-xs text-gray-400">Add to group</span>
+                </button>
+              ))}
+            </div>
+          )}
+          {query.trim() && results.length === 0 && (
+            <div className="absolute z-20 mt-1 w-full bg-white rounded-lg border-[0.5px] border-black px-3 py-2.5 text-sm text-gray-400">
+              No match — or already in this group.
+            </div>
+          )}
+        </div>
+
+        {roster.length === 0 ? (
+          <p className="text-center text-sm text-gray-400 py-8">No students here — search to add a walk-in.</p>
+        ) : device === 'mobile' ? (
+          <div className="space-y-3">
+            {roster.map((s) => (
+              <StudentCard key={s.id} student={s} subject={subject} walkin={!scheduledSet.has(s.name)}
+                open={openId === s.id} onToggle={() => setOpenId(openId === s.id ? null : s.id)}
+                onView={() => setViewId(s.id)} onRemove={() => removeWalkin(s.name)} />
+            ))}
+          </div>
+        ) : (
+          <div className="columns-2 gap-3">
+            {roster.map((s) => (
+              <div key={s.id} className="mb-3 break-inside-avoid">
+                <StudentCard student={s} subject={subject} walkin={!scheduledSet.has(s.name)}
+                  open={openId === s.id} onToggle={() => setOpenId(openId === s.id ? null : s.id)}
+                  onView={() => setViewId(s.id)} onRemove={() => removeWalkin(s.name)} />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      <div className="mt-2 grid grid-cols-4 gap-2">
-        {SLOTS.map((s) => (
-          <button key={s} onClick={() => { setSlot(s); setOpenId(null) }}
-            className={`text-sm rounded-lg py-2 border ${slot === s ? 'bg-gray-200 border-gray-400 font-medium' : 'bg-white text-gray-600 border-gray-300'}`}>
-            {s}
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-3 relative">
-        <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search walk-in student…"
-          className="w-full rounded-lg border border-gray-300 bg-white pl-9 pr-3 py-2.5 text-sm outline-none focus:border-gray-500" />
-      </div>
-
-      <div className={`mt-3 ${device === 'tablet' ? 'grid grid-cols-2 gap-2' : 'space-y-2'}`}>
-        {roster.map((s) => (
-          <StudentRow key={s.id} student={s} subject={subject}
-            open={openId === s.id} onToggle={() => setOpenId(openId === s.id ? null : s.id)}
-            onView={() => setViewId(s.id)} />
-        ))}
-        {roster.length === 0 && <p className="text-center text-sm text-gray-400 py-8 col-span-2">No students here — search for a walk-in.</p>}
-      </div>
-
-      {viewId && <ProgressModal device={device} student={data[Object.keys(data).find((n) => data[n].id === viewId)]} subject={subject} onClose={() => setViewId(null)} />}
+      {viewId && <ProgressModal device={device} student={Object.values(data).find((s) => s.id === viewId)} subject={subject} onClose={() => setViewId(null)} />}
     </div>
   )
 }
 
-function StudentRow({ student, subject, open, onToggle, onView }) {
+function StudentCard({ student, subject, walkin, open, onToggle, onView, onRemove }) {
   const items = subjectItems(student.items, subject)
   const list = todo(items)
+  const [details, setDetails] = useState({})
+
   return (
-    <div className="rounded-lg border border-gray-200 bg-white overflow-hidden self-start">
-      <div className="flex items-center gap-2 px-3 py-3">
-        <button onClick={onToggle} className="text-gray-400 shrink-0">
-          {open ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+    <div className={`rounded-xl p-3 self-start border-[0.5px] border-black ${walkin ? 'bg-[#f7efdd]' : 'bg-gray-50'}`}>
+      <div className="flex items-center gap-2">
+        <button onClick={onToggle} className="text-gray-500 shrink-0">
+          {open ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
         </button>
-        <span className="font-medium">{student.name}</span>
+        <span className="text-lg font-semibold">{student.name}</span>
         <span className="text-xs text-gray-400">{student.grade}</span>
-        {list.length > 0 && <span className="text-[11px] text-gray-600 bg-gray-100 rounded-full px-2 py-0.5">{list.length} to do</span>}
-        <button onClick={onView} className="ml-auto text-xs rounded-md px-2.5 py-1 border border-gray-300 text-gray-700 hover:bg-gray-50 shrink-0">
-          View progress
+        {walkin && <span className="text-[10px] font-medium text-[#8a6d2b] bg-[#ecdcb0] rounded px-1.5 py-0.5">walk-in</span>}
+        {walkin && (
+          <button onClick={onRemove} title="Remove walk-in" className="text-[#b8923c] hover:text-[#8a6d2b] shrink-0">
+            <X className="w-4 h-4" />
+          </button>
+        )}
+        <button onClick={onView} className="ml-auto text-xs rounded-md px-1.5 py-1.5 bg-white border border-gray-300 hover:bg-gray-50 shrink-0">
+          View Progress
         </button>
       </div>
 
       {open && (
-        <div className="px-3 pb-3 space-y-1.5">
-          {list.length === 0 && <p className="text-xs text-gray-400 py-1">Nothing outstanding in {subject}.</p>}
+        <div className="mt-3 space-y-2">
+          {list.length === 0 && <p className="text-xs text-gray-500 px-1 py-2">Nothing outstanding in {subject}.</p>}
           {list.map((it) => {
-            const st = STATUS[it.status]
+            const showDetails = details[it.id]
+            const overdue = it.status === 'notdone' && isOverdue(it.due)
             return (
-              <div key={it.id} className="flex items-center gap-2 rounded-md border border-gray-100 px-2 py-1.5">
-                <span className={`w-2 h-2 rounded-full shrink-0 ${st.dot}`} />
-                <span className="text-sm text-gray-800">{it.strand.label}</span>
-                {it.level && <span className="text-xs text-gray-500">· {it.level}</span>}
-                <span className={`ml-auto text-[11px] ${st.text}`}>
-                  {it.status === 'fic' && it.fixBy ? `fix by ${it.fixBy}` : st.label}
-                </span>
+              <div key={it.id} className="bg-white rounded-lg">
+                <div className="text-[10px] uppercase tracking-wide text-gray-400 px-3 pt-2">{it.topic}</div>
+                <div className="flex items-center gap-2 px-3 pb-2">
+                  <span className="text-sm font-semibold w-16 shrink-0">{it.strand.code}</span>
+                  <span className="text-xs text-gray-600 truncate">{it.level}{it.detail ? ` · ${it.detail}` : ''}</span>
+                  <button onClick={() => setDetails((d) => ({ ...d, [it.id]: !d[it.id] }))}
+                    className="ml-auto text-xs rounded-md px-2 py-1 border border-gray-300 hover:bg-gray-50 shrink-0">
+                    Details
+                  </button>
+                </div>
+                {showDetails && (
+                  <div className="mx-2 mb-2 rounded-lg border border-gray-200 p-2.5">
+                    <div className="text-[11px] text-gray-500">
+                      Assigned {it.posted}{(it.due || it.fixBy) && <> · Due {it.due || it.fixBy}</>}
+                      {overdue && <span className="text-red-600 font-medium"> · past due</span>}
+                    </div>
+                  </div>
+                )}
               </div>
             )
           })}
@@ -155,23 +221,28 @@ function ProgressModal({ device, student, subject, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-10" onClick={onClose}>
-      <div className={`bg-white rounded-2xl w-full ${device === 'mobile' ? 'max-w-[360px]' : 'max-w-[720px]'} max-h-[85vh] overflow-auto p-4`} onClick={(e) => e.stopPropagation()}>
+      <div className={`bg-white rounded-2xl border-[1.5px] border-black w-full ${device === 'mobile' ? 'max-w-[360px]' : 'max-w-[760px]'} max-h-[86vh] overflow-auto p-4`} onClick={(e) => e.stopPropagation()}>
         <div className="flex items-start justify-between">
           <div>
             <div className="text-base font-semibold">{student.name}</div>
-            <div className="text-xs text-gray-400">{student.grade}</div>
+            <div className="text-xs text-gray-400">{student.grade} · progress</div>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
               {SUBJECTS.map((s) => (
                 <button key={s} onClick={() => setSubj(s)}
-                  className={`text-xs px-3 py-1 rounded-md border ${subj === s ? 'bg-gray-900 text-white border-gray-900' : 'bg-white text-gray-600 border-gray-300'}`}>
+                  className={`text-xs px-3 py-1 rounded-md border-[0.5px] border-black ${subj === s ? 'bg-[#FDD776] text-gray-900' : 'bg-white text-gray-600'}`}>
                   {s === 'Math' ? 'maths' : 'english'}
                 </button>
               ))}
             </div>
             <button onClick={onClose} className="text-gray-400"><X className="w-5 h-5" /></button>
           </div>
+        </div>
+
+        <div className="flex gap-4 mt-3 text-[11px] text-gray-500">
+          <span className="inline-flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-gray-200 inline-block" /> done</span>
+          <span className="inline-flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-white border border-gray-300 inline-block" /> not done</span>
         </div>
 
         {items.length === 0
@@ -182,17 +253,29 @@ function ProgressModal({ device, student, subject, onClose }) {
   )
 }
 
-function LevelTag({ item }) {
-  const st = STATUS[item.status]
+// Greyscale cell: gray block = done, white block = not done (with due date).
+function Cell({ item }) {
+  if (!item) return <span className="text-gray-300">·</span>
+  const done = item.status === 'done' || item.status === 'submitted'
+  if (done) {
+    return (
+      <span className="inline-flex items-center gap-1 rounded bg-gray-200 text-gray-700 px-2 py-0.5 text-sm">
+        {item.level || item.strand.code}
+        {item.wasFic && <span className="text-[9px] text-gray-500">fic✓</span>}
+      </span>
+    )
+  }
+  // not done / fic — white block, show due or fix-by underneath. FIC gets a red stroke.
+  const isFic = item.status === 'fic'
+  const note = isFic ? `fix ${item.fixBy || ''}` : isOverdue(item.due) ? `past due ${item.due}` : item.due ? `due ${item.due}` : ''
   return (
-    <span className="inline-flex items-center gap-1.5">
-      <span className={`w-1.5 h-1.5 rounded-full ${st.dot}`} />
-      <span className="text-[15px]">{item.level || item.strand.code}</span>
+    <span className="inline-flex flex-col items-center">
+      <span className={`rounded bg-white border text-gray-900 px-2 py-0.5 text-sm ${isFic ? 'border-[#ED3434]' : 'border-gray-400'}`}>{item.level || item.strand.code}</span>
+      {note && <span className="text-[9px] text-gray-500 mt-0.5">{note}</span>}
     </span>
   )
 }
 
-// Mobile — vertical, grouped by session date (the layout you liked).
 function BySession({ items }) {
   return (
     <div className="mt-4">
@@ -203,7 +286,7 @@ function BySession({ items }) {
             {entries.map((it) => (
               <div key={it.id} className="flex items-center justify-between rounded-lg border border-gray-200 px-3 py-2.5">
                 <span className="text-sm">{it.strand.label}</span>
-                <LevelTag item={it} />
+                <Cell item={it} />
               </div>
             ))}
           </div>
@@ -213,7 +296,6 @@ function BySession({ items }) {
   )
 }
 
-// Tablet — the full grid: dates × strands.
 function GridView({ items }) {
   const g = grid(items)
   return (
@@ -221,7 +303,7 @@ function GridView({ items }) {
       <table className="border-collapse w-full text-sm">
         <thead>
           <tr className="text-left text-gray-500">
-            <th className="py-2 px-3 border-b border-gray-300 font-medium whitespace-nowrap">Date</th>
+            <th className="py-2 px-3 border-b border-gray-300 font-medium whitespace-nowrap sticky left-0 bg-white">Date</th>
             {g.strands.map((s) => (
               <th key={s.code} className="py-2 px-3 border-b border-gray-300 font-medium whitespace-nowrap">{s.label}</th>
             ))}
@@ -230,15 +312,12 @@ function GridView({ items }) {
         <tbody>
           {g.dates.map((d) => (
             <tr key={d}>
-              <td className="py-3 px-3 border-b border-gray-200 text-gray-500 whitespace-nowrap border-r border-gray-300">{d}</td>
-              {g.strands.map((s) => {
-                const it = g.get(d, s.code)
-                return (
-                  <td key={s.code} className="py-3 px-3 border-b border-gray-200 border-r border-gray-100 text-center">
-                    {it ? <LevelTag item={it} /> : <span className="text-gray-300">—</span>}
-                  </td>
-                )
-              })}
+              <td className="py-2.5 px-3 border-b border-gray-100 text-gray-500 whitespace-nowrap border-r border-gray-200 sticky left-0 bg-white">{d}</td>
+              {g.strands.map((s) => (
+                <td key={s.code} className="py-2.5 px-3 border-b border-gray-100 text-center">
+                  <Cell item={g.get(d, s.code)} />
+                </td>
+              ))}
             </tr>
           ))}
         </tbody>

@@ -42,10 +42,13 @@ function mapSubjectTopic(topicName, title) {
   return { subject, topic: t || 'Classwork' }
 }
 
+// A `fic` tag stays in the title forever (so the director keeps FIC history), but it only
+// counts as an ACTIVE fic while the work sits in Classwork/Homework. Once it moves to
+// "To Be Graded" / "Graded" it's a CLEARED fic — treat as submitted/done, not outstanding.
 function statusFor(topicName, title) {
-  if (FIC_RE.test(title)) return 'fic'
-  if (/graded/i.test(topicName)) return 'done' // "Graded" and "To Be Graded" = student did it
-  return 'notdone'
+  if (/to be graded/i.test(topicName)) return 'submitted'
+  if (/graded/i.test(topicName)) return 'done'
+  return FIC_RE.test(title) ? 'fic' : 'notdone'
 }
 
 function ficDate(title) {
@@ -88,7 +91,8 @@ async function main() {
         topic,
         title: cw.title,
         status: statusFor(tName, cw.title),
-        posted: fmtDate(cw.creationTime),
+        wasFic: FIC_RE.test(cw.title),      // ever a fic (kept for history, even once cleared)
+        posted: fmtDate(cw.creationTime),   // when assigned
         due: cw.dueDate ? `${MONTHS[cw.dueDate.month - 1]} ${cw.dueDate.day}` : '',
         fixBy: ficDate(cw.title),
         material: (cw.materials && cw.materials[0]?.driveFile?.driveFile?.title) || '',

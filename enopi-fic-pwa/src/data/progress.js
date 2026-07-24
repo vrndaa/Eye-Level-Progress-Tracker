@@ -38,6 +38,20 @@ export function parseLevel(title) {
   return ''
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+// Is a "Mon D" due date in the past? (used to flag overdue not-started work)
+export function isOverdue(due) {
+  if (!due) return false
+  const m = due.match(/([A-Za-z]{3})\s+(\d+)/)
+  if (!m) return false
+  const mon = MONTHS.indexOf(m[1])
+  if (mon < 0) return false
+  const now = new Date()
+  const d = new Date(now.getFullYear(), mon, +m[2])
+  return d < new Date(now.getFullYear(), now.getMonth(), now.getDate())
+}
+
 export const STATUS = {
   done:      { label: 'Done',        dot: 'bg-green-500',  text: 'text-green-600',  chipBg: 'bg-green-100',  chipText: 'text-green-700' },
   submitted: { label: 'Submitted',   dot: 'bg-sky-500',    text: 'text-sky-600',    chipBg: 'bg-sky-100',    chipText: 'text-sky-700' },
@@ -60,6 +74,12 @@ export function todo(items) {
     .sort((a, b) => order[a.status] - order[b.status])
 }
 
+// Sort key for "Mon D" dates (newest first).
+function dateKey(s) {
+  const m = (s || '').match(/([A-Za-z]{3})\s+(\d+)/)
+  return m ? MONTHS.indexOf(m[1]) * 100 + +m[2] : 0
+}
+
 // Group by session date, newest first — the mobile "by session" view.
 export function sessions(items) {
   const byDate = new Map()
@@ -67,12 +87,14 @@ export function sessions(items) {
     if (!byDate.has(i.posted)) byDate.set(i.posted, [])
     byDate.get(i.posted).push(i)
   }
-  return [...byDate.entries()].map(([date, entries]) => ({ date, entries }))
+  return [...byDate.entries()]
+    .map(([date, entries]) => ({ date, entries }))
+    .sort((a, b) => dateKey(b.date) - dateKey(a.date))
 }
 
-// Rows = dates, columns = strands, cell = level — the tablet grid.
+// Rows = dates (newest first), columns = strands, cell = level — the tablet grid.
 export function grid(items) {
-  const dates = [...new Set(items.map((i) => i.posted))]
+  const dates = [...new Set(items.map((i) => i.posted))].sort((a, b) => dateKey(b) - dateKey(a))
   const strandOrder = []
   const seen = new Set()
   for (const i of items) if (!seen.has(i.strand.code)) { seen.add(i.strand.code); strandOrder.push(i.strand) }
